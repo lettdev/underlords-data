@@ -1,0 +1,23 @@
+{
+  "name": "underlords-data",
+  "version": "1.0.0",
+  "description": "Data for Underlords web app",
+  "main": "index.js",
+  "dependencies": {
+    "simple-vdf": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tungkradle/underlords-data.git"
+  },
+  "author": "Krad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tungkradle/underlords-data/issues"
+  },
+  "homepage": "https://github.com/tungkradle/underlords-data#readme"
+}
