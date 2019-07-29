@@ -55,6 +55,7 @@ const Tasks = [
           let strSynergyDesc = strObj.dac['dac_synergy_desc_' + synergy + '_' + (index+1)];
           let m;
           while ((m = regex.exec(strSynergyDesc)) !== null) {
+            regex.lastIndex = -1; // Fix RegEx miss hp_regen matches in Scrappy Desc
             let values = dataObj.synergies[synergy][m[1]];
             let newVal = Array.isArray(values) ? values[index] : values;
             strSynergyDesc = strSynergyDesc.replace(m[0], newVal);
