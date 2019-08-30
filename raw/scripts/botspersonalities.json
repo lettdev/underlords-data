@@ -1,0 +1,880 @@
+{
+	"GoblinMech-Knights": {
+		"id": 0,
+		"notes": "Units are given in priority-to-deploy order. If units are nonempty, we'll buy just those (plus randos if needed).",
+		"notes2": "Otherwise, we'll buy any units that match the given keywords. If both units and keywords are specified, we just use keywords to know which items to get.",
+		"notes3": "We can also override whether to sell obsolete units (defaults to false for personalities, but can be set true, see below) and max level to buy XP for.",
+		"units": [
+			"techies",
+			"timbersaw",
+			"bounty_hunter",
+			"clockwerk",
+			"dragon_knight",
+			"omniknight",
+			"luna",
+			"chaos_knight",
+			"alchemist",
+			"tinker",
+			"abaddon",
+			"bat_rider"
+		],
+		"keywords": [
+			"goblin",
+			"inventor",
+			"knight",
+			"human"
+		],
+		"items": [
+			{
+				"item": "goblins_give_gold_on_last_hit",
+				"offset": 5
+			},
+			{
+				"item": "mechs_explode_on_death",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_30" ]
+	},
+	"Dragons-Knights": {
+		"id": 1,
+		"notes2": "Allow trying for a 3-star DK",
+		"maxTierForLevel3": 4,
+		"maxLevelToBuy": 9,
+		"units": [
+			"dragon_knight",
+			"viper",
+			"omniknight",
+			"luna",
+			"chaos_knight",
+			"abaddon",
+			"bat_rider",
+			"necrophos",
+			"witch_doctor",
+			
+			"troll_warlord"
+		],
+		"keywords": [
+			"dragon",
+			"knight",
+			"human",
+			"undead",
+			"troll"
+		],
+		"names": [ "#DAC_BotName_31" ]
+	},
+	"Warriors": {
+		"id": 2,
+		"sellObsolete": false,
+		"keywords": [
+			"warrior"
+		],
+		"items": [
+			{
+				"item": "orcs_get_extra_hp",
+				"offset": 5
+			},
+			{
+				"item": "humans_turn_undead",
+				"offset": 2
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_32" ]
+
+	},
+	"Druids-Beasts-Nagas-Hunters": {
+		"id": 3,
+		"units": [
+			"lone_druid",
+			"treant_protector",
+			"furion",
+			"enchantress",
+			"lycan",
+			"tusk",
+			"slardar",
+			"medusa",
+			"mirana",
+			"tidehunter",
+			
+			"slark"
+		],
+		"keywords": [
+			"druid",
+			"savage",
+			"naga",
+			"hunter"
+		],
+		"items": [
+			{
+				"item": "druids_heal_over_time_on_death",
+				"offset": 3
+			},
+			{
+				"item": "summoning_stone",
+				"offset": 6
+			},
+			{
+				"item": "naga_skin",
+				"offset": 4
+			},
+			{
+				"item": "beast_bleed",
+				"offset": 5
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 4
+			}
+		],
+		"names": [ "#DAC_BotName_33" ]
+	},
+	"Knights-Trolls": {
+		"id": 4,
+		"notes": "Our tenth unit is a warlock for the warlock synergy.",
+		"units": [
+			"dragon_knight",
+			"omniknight",
+			"luna",
+			"chaos_knight",
+			"abaddon",
+			"bat_rider",
+
+			"troll_warlord",
+			"witch_doctor",
+			"shadow_shaman",
+
+			"necrophos"
+		],
+		"keywords": [
+			"troll",
+			"knight",
+			"human",
+			"warlock"
+		],
+		"items": [
+			{
+				"item": "trolls_have_aspd_aura",
+				"offset": 5
+			},
+			{
+				"item": "humans_turn_undead",
+				"offset": 2
+			}
+		],
+		"names": [ "#DAC_BotName_34" ]
+	},
+	"Assassins": {
+		"id": 5,
+		"maxLevelToBuy": 9,
+		"keywords": [
+			"assassin"
+		],
+		"names": [ "#DAC_BotName_35" ]
+	},
+	"Troll-Shaman-Elemental-Warrior": {
+		"id": 6,
+		"units": [
+			"doom",
+			"tiny",
+			"troll_warlord",
+			"witch_doctor",
+			"shadow_shaman",
+			"bat_rider",
+			"disruptor",
+			"enigma",
+			"arc_warden",
+			"razor"
+		],
+		"keywords": [
+			"troll",
+			"brawny",
+			"shaman",
+			"naga",
+			"warrior"
+		],
+		"items": [
+			{
+				"item": "orcs_get_extra_hp",
+				"offset": 5
+			},
+			{
+				"item": "trolls_have_aspd_aura",
+				"offset": 5
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 3
+			}
+		],
+		"names": [ "#DAC_BotName_36" ]
+	},
+	"Elves": {
+		"id": 7,
+		"notes": "Explicitly do up the units because we want a named tenth unit if we ever get to 10.",
+		"maxLevelToBuy": 10,
+		"units": [
+			"templar_assassin",
+			"wind_ranger",
+			"mirana",
+			"treant_protector",
+			"furion",
+			"luna",
+			"phantom_assassin",
+			"antimage",
+			"puck",
+			"terrorblade",
+
+			"lone_druid",
+			"enchantress"
+		],
+		"keywords": [
+			"elf"
+		],
+		"items": [
+			{
+				"item": "mask_of_madness",
+				"offset": -200
+			},
+			{
+				"item": "elves_start_invisible",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_37" ]
+	},
+	"Hunter-Orc-Warrior-Dwarf": {
+		"id": 8,
+		"notes": "Drow is maybe a better choice than Sniper, but we want Sniper for the Dwarf synergy. Axe is the fallback early unit for orc synergy until Jugg,",
+		"notes2": "and Disruptor is added so without Gyro and Tide you can at least get 4-orc.",
+		"units": [
+			"medusa",
+			"tidehunter",
+			"gyrocopter",
+			"doom",
+			"sniper",
+			"juggernaut",
+			"beastmaster",
+			"wind_ranger",
+			"mirana",
+			"lycan",
+
+			"drow_ranger",
+
+			"disruptor",
+			"slardar",
+			"axe"
+		],
+		"keywords": [
+			"hunter",
+			"brawny",
+			"warrior",
+			"dwarf",
+			"naga"
+		],
+		"items": [
+			{
+				"item": "naga_skin",
+				"offset": 6
+			},
+			{
+				"item": "orcs_get_extra_hp",
+				"offset": 5
+			},
+			{
+				"item": "hunters_band",
+				"offset": 5
+			},
+			{
+				"item": "humans_turn_undead",
+				"offset": 2
+			}
+		],
+		"names": [ "#DAC_BotName_38" ]
+	},
+	"Elemental-Mage-Shaman-Warrior": {
+		"id": 9,
+		"notes": "This shows off our new units, and is a decent lineup. Bloodseeker is out of place except for doing that and to have an early unit.",
+		"notes2": "We should maybe use SF instead of Necro? We don't have a demon. But Necro gives us undead without the humans.",
+		"units": [
+			"enigma",
+			"arc_warden",
+			"razor",
+			"tiny",
+
+			"pudge",
+			"kunkka",
+
+			"disruptor",
+
+			"crystal_maiden",
+
+			"necrophos",
+			"lich",
+
+			"morphling",
+			"shadow_shaman",
+			"keeper_of_the_light"
+		],
+		"keywords": [
+			"primordial",
+			"mage",
+			"warrior",
+			"undead",
+			"human",
+			"shaman"
+		],
+		"items": [
+			{
+				"item": "humans_turn_undead",
+				"offset": 5
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 3
+			},
+			{
+				"item": "elementals_spawn_eidolons",
+				"offset": 2
+			},
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": 5
+			},
+			{
+				"item": "shamans_hex_attackers",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_39" ]
+	},
+	"Goblin-Mech-Mages": {
+		"id": 10,
+		"notes": "Add fallback mages",
+		"units": [
+			"timbersaw",
+			"clockwerk",
+			"shadow_fiend",
+			"necrophos",
+			"lich",
+			"keeper_of_the_light",
+			"crystal_maiden",
+			"alchemist",
+			"tinker",
+			"puck",
+
+			"lina",
+			"bounty_hunter"
+		],
+		"keywords": [
+			"mage",
+			"human",
+			"goblin",
+			"inventor",
+			"warlock",
+			"undead"
+		],
+		"items": [
+			{
+				"item": "goblins_give_gold_on_last_hit",
+				"offset": 3
+			},
+			{
+				"item": "mechs_explode_on_death",
+				"offset": 4
+			},
+			{
+				"item": "mages_ghost_when_low_health",
+				"offset": 6
+			},
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_40" ]
+	},
+	"Warrior-Orc-Hunter-Naga": {
+		"id": 11,
+		"notes": "Add fallback hunters - Windranger and Drow.",
+		"notes2": "Disruptor is added for 4-orc if you can't get other units. Maybe should add a fallback warrior?",
+		"units": [
+			"tidehunter",
+			"juggernaut",
+			"beastmaster",
+			"kunkka",
+			"doom",
+			"lycan",
+			"medusa",
+			"slardar",
+
+			"wind_ranger",
+			"drow_ranger",
+
+			"slark",
+			"axe",
+			"disruptor"
+
+		],
+		"keywords": [
+			"hunter",
+			"brawny",
+			"warrior",
+			"naga"
+		],
+		"items": [
+			{
+				"item": "orcs_get_extra_hp",
+				"offset": 5
+			},
+			{
+				"item": "hunters_band",
+				"offset": 2
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 5
+			},
+			{
+				"item": "humans_turn_undead",
+				"offset": 100
+			}
+		],
+		"names": [ "#DAC_BotName_41" ]
+	},
+	"Warriors-Mages-Humans-Elemental-Naga": {
+		"id": 12,
+		"notes": "Try to do a transition here. And because Lich is hard to roll, add KOTL for 4th human (and 3rd mage). Add Slardar to replace Tide as Naga.",
+		"units": [
+			"lich",
+			"kunkka",
+			"tidehunter",
+			"tiny",
+			"razor",
+			"shadow_fiend",
+			"crystal_maiden",
+			"medusa",
+			"slardar",
+			"lone_druid",
+
+			"keeper_of_the_light",
+			"juggernaut"
+
+		],
+		"keywords": [
+			"primordial",
+			"human",
+			"mage",
+			"naga",
+			"warrior"
+		],
+		"items": [
+			{
+				"item": "mages_ghost_when_low_health",
+				"offset": 6
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 4
+			},
+			{
+				"item": "elementals_spawn_eidolons",
+				"offset": 2
+			},
+			{
+				"item": "naga_skin",
+				"offset": 4
+			},
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": 6
+			}
+		],
+		"names": [ "#DAC_BotName_42" ]
+	},
+	"Undead-Warriors": {
+		"id": 13,
+		"notes": "Do the usual early-orcs thing. Make Witchdoctor the 10th unit to get trolls with Troll Warlord and warlocks with Necro.",
+		"notes2": "We don't add keyword human because we want humans-are-undead, not the human item. Give it one heck of a tier offset.",
+		"units": [
+			"kunkka",
+			"doom",
+			"juggernaut",
+			"pudge",
+			"troll_warlord",
+			"tusk",
+			"lich",
+			"necrophos",
+			"drow_ranger",
+			"witch_doctor",
+
+			"abaddon",
+
+			"axe"
+		],
+		"keywords": [
+			"undead",
+			"warrior",
+			"troll"
+		],
+		"items": [
+			{
+				"item": "humans_turn_undead",
+				"offset": 100
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 5
+			},
+			{
+				"item": "beast_bleed",
+				"offset": 2
+			},
+			{
+				"item": "undeads_stop_healing",
+				"offset": 5
+			},
+			{
+				"item": "trolls_have_aspd_aura",
+				"offset": 6
+			}
+		],
+		"names": [ "#DAC_BotName_43" ]
+	},
+	"Warrior-Mages-SF-Naga": {
+		"id": 14,
+		"notes": "Fallback early warriors/orcs",
+		"notes2": "This kinda depends on the warlock item, but does ok without it too",
+		"maxLevelToBuy": 10,
+		"units": [
+			"lich",
+			"kunkka",
+			"pudge",
+			"slardar",
+			"tiny",
+			"tidehunter",
+			"crystal_maiden",
+			"razor",
+			"keeper_of_the_light",
+			"shadow_fiend",
+
+			"lina",
+			"necrophos",
+			"axe"
+
+		],
+		"keywords": [
+			"mage",
+			"warlock",
+			"warrior",
+			"human"
+		],
+		"items": [
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": 5
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 4
+			},
+			{
+				"item": "mages_ghost_when_low_health",
+				"offset": 6
+			},
+			{
+				"item": "naga_skin",
+				"offset": 4
+			}
+		],
+		"names": [ "#DAC_BotName_44" ]
+	},
+	"Warrior-Trolls": {
+		"id": 15,
+		"notes": "Fallback warriors. Which six warriors to use are arguable, but here's a stab at them.",
+		"notes2": "We should maybe use SF instead of Necro? But we can't use both SF and Doom, so let's go with beef.",
+		"notes3": "Note that if you can get Troll early, this is a very strong midgame comp with 3-4 good warriors and 4 trolls.",
+		"units": [
+			"kunkka",
+			"tidehunter",
+			"doom",
+			"troll_warlord",
+			"bat_rider",
+			"witch_doctor",
+			"shadow_shaman",
+			"slardar",
+			"tusk",
+			"necrophos",
+
+			"axe",
+			"tiny"
+		],
+		"keywords": [
+			"troll",
+			"warrior",
+			"undead",
+			"warlock"
+		],
+		"items": [
+			{
+				"item": "humans_turn_undead",
+				"offset": 5
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 5
+			},
+			{
+				"item": "trolls_have_aspd_aura",
+				"offset": 5
+			},
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": -1
+			}
+		],
+		"names": [ "#DAC_BotName_45" ]
+	},
+	"Trolls-Hunters": {
+		"id": 16,
+		"notes": "Fallback hunter, fallback warrior.",
+		"notes2": "We could have SF for warlock, but we need more beef, so we're going with Doom.",
+		"units": [
+			"medusa",
+			"tidehunter",
+			"doom",
+			"juggernaut",
+			"beastmaster",
+			"troll_warlord",
+			"bat_rider",
+			"witch_doctor",
+			"shadow_shaman",
+			"wind_ranger",
+
+			"axe",
+			"tiny"
+		],
+		"keywords": [
+			"troll",
+			"warrior",
+			"hunter",
+			"brawny"
+		],
+		"items": [
+			{
+				"item": "warriors_never_die",
+				"offset": 4
+			},
+			{
+				"item": "trolls_have_aspd_aura",
+				"offset": 6
+			},
+			{
+				"item": "orcs_get_extra_hp",
+				"offset": 5
+			},
+			{
+				"item": "hunters_band",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_46" ]
+	},
+	"Beasts-Druids-Warlocks": {
+		"id": 17,
+		"notes": "This goes all-in on beasts. SF is there as the demon--we could have done Doom instead (with Necro as warlock)",
+		"notes2": "but that would lose us the human synergy.",
+		"notes3": "This lineup depends on summons, so we definitely want the summoner item and also the extra damage item (so summons do player damage)",
+		"units": [
+			"lone_druid",
+			"lycan",
+			"tusk",
+			"kunkka",
+			"treant_protector",
+			"enchantress",
+			"furion",
+			"shadow_fiend",
+			"venomancer",
+			"sand_king",
+
+			"tiny"
+		],
+		"keywords": [
+			"druid",
+			"savage",
+			"warlock",
+			"warrior"
+		],
+		"items": [
+			{
+				"item": "druids_heal_over_time_on_death",
+				"offset": 3
+			},
+			{
+				"item": "summoning_stone",
+				"offset": 6
+			},
+			{
+				"item": "extra_damage_per_unit",
+				"offset": 4
+			},
+			{
+				"item": "beast_bleed",
+				"offset": 7
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 3
+			},
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": 2
+			}
+		],
+		"names": [ "#DAC_BotName_47" ]
+	},
+	"Goblin-Mech-Undead": {
+		"id": 18,
+		"notes": "Techies does physical damage! Add CK as our demon to synergize with Abaddon",
+		"units": [
+			"techies",
+			"timbersaw",
+			"bounty_hunter",
+			"clockwerk",
+			"alchemist",
+			"tinker",
+			"necrophos",
+			"lich",
+			"drow_ranger",
+			"pudge",
+			"abaddon",
+			"chaos_knight"
+		],
+		"keywords": [
+			"undead",
+			"goblin",
+			"inventor"
+		],
+		"items": [
+			{
+				"item": "goblins_give_gold_on_last_hit",
+				"offset": 2
+			},
+			{
+				"item": "mechs_explode_on_death",
+				"offset": 5
+			},
+			{
+				"item": "undeads_stop_healing",
+				"offset": 4
+			},
+			{
+				"item": "warlocks_spell_lifesteal",
+				"offset": 5
+			}
+		],
+		"names": [ "#DAC_BotName_48" ]
+	},
+	"Elemental-Mages": {
+		"id": 19,
+		"notes": "Not bothering to add Morphling--maybe we should?",
+		"units": [
+			"enigma",
+			"kunkka",
+			"doom",
+			"tiny",
+			"razor",
+			"arc_warden",
+			"crystal_maiden",
+			"keeper_of_the_light",
+			"disruptor",
+			"lich",
+
+			"lycan",
+			"lina"
+
+		],
+		"keywords": [
+			"primordial",
+			"human",
+			"mage",
+			"shaman",
+			"warrior",
+			"undead"
+		],
+		"items": [
+			{
+				"item": "mages_ghost_when_low_health",
+				"offset": 6
+			},
+			{
+				"item": "warriors_never_die",
+				"offset": 4
+			},
+			{
+				"item": "elementals_spawn_eidolons",
+				"offset": 2
+			},
+			{
+				"item": "humans_turn_undead",
+				"offset": 6
+			},
+			{
+				"item": "shamans_hex_attackers",
+				"offset": 6
+			},
+			{
+				"item": "undeads_stop_healing",
+				"offset": 3
+			}
+		],
+		"names": [ "#DAC_BotName_49" ]
+	},
+	"Assassins-Elf": {
+		"id": 20,
+		"notes": "We can't use MoM, sadly, because silence kills elf evasion.",
+		"units": [
+			"phantom_assassin",
+			"templar_assassin",
+			"sand_king",
+			"queen_of_pain",
+			"slark",
+			"bloodseeker",
+			"wind_ranger",
+			"mirana",
+			"treant_protector",
+			"furion",
+
+			"viper",
+			"bounty_hunter",
+			"morphling"
+		],
+		"keywords": [
+			"assassin",
+			"elf",
+			"dragon"
+		],
+		"items": [
+			{
+				"item": "assassins_blind_on_landing",
+				"offset": 6
+			},
+			{
+				"item": "elves_start_invisible",
+				"offset": 2
+			},
+			{
+				"item": "dragons_hoard",
+				"offset": -1
+			},
+			{
+				"item": "mask_of_madness",
+				"offset": -200
+			}
+		],
+		"names": [ "#DAC_BotName_50" ]
+	}
+}

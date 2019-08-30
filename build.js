@@ -16,7 +16,7 @@ const Tasks = [
   // Heroes
   {
     key: 'heroes',
-    raw: 'units.json',
+    raw: 'scripts/units.json',
     dest: 'heroes.json',
     task: function() {
       const heroesFile = require(rawDir + this.raw);
@@ -33,7 +33,7 @@ const Tasks = [
   // Alliances
   {
     key: 'synergies',
-    raw: 'synergies.json',
+    raw: 'scripts/synergies.json',
     dest: 'synergies.json',
     task: function() {
       const synergiesFile = require(rawDir + this.raw);
@@ -43,7 +43,7 @@ const Tasks = [
   // Strings En
   {
     key: 'string_en',
-    raw: 'dac_english.txt',
+    raw: 'panorama/localization/dac_english.txt',
     dest: 'dac_english.json',
     task: function() {
       const strFile = require(rawDir + this.raw);

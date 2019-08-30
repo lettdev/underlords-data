@@ -1,0 +1,1081 @@
+{
+	"1": {
+		"name": "S0 Event",
+		"points_per_level": 1000,
+		"max_level": 60,
+		"active_start_time": "2019-07-04 00:00:00",
+		"active_end_time": "2019-12-15 00:00:00",
+		"claim_end_time": "2019-12-18 00:00:00",
+        "default_event_points": 0,
+
+        "includes": [
+            "scripts/events/season_00_challenges.json",
+            "scripts/events/season_00_underlords.json"
+        ],
+
+		"currencies": [
+			{
+				"name": "event_points",
+				"id": 0,
+				"level_points": [ 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3250, 3500, 3750, 4000, 4250, 4500, 4750, 5000, 5250, 5500, 5750, 6000, 6250 ]
+			}
+			
+		],
+		"match_rewards": [
+			{
+				"min_place": 8,
+				"max_place": 8,
+				"currencies": [
+					{
+						"amount": 50,
+						"currency": "event_points"
+					}
+				]
+			},
+			{
+				"min_place": 7,
+				"max_place": 7,
+				"currencies": [
+					{
+						"amount": 60,
+						"currency": "event_points"
+					}
+				]
+			},
+			{
+				"min_place": 6,
+				"max_place": 6,
+				"currencies": [
+					{
+						"amount": 70,
+						"currency": "event_points"
+					}
+				]
+
+			},
+			{
+				"min_place": 5,
+				"max_place": 5,
+				"currencies": [
+					{
+						"amount": 80,
+						"currency": "event_points"
+					}
+				]
+
+			},
+			{
+				"min_place": 4,
+				"max_place": 4,
+				"currencies": [
+					{
+						"amount": 90,
+						"currency": "event_points"
+					}
+				]
+
+			},
+			{
+				"min_place": 3,
+				"max_place": 3,
+				"currencies": [
+					{
+						"amount": 100,
+						"currency": "event_points"
+					}
+				]
+
+			},
+			{
+				"min_place": 2,
+				"max_place": 2,
+				"currencies": [
+					{
+						"amount": 120,
+						"currency": "event_points"
+					}
+				]
+
+			},
+			{
+				"min_place": 1,
+				"max_place": 1,
+				"currencies": [
+					{
+						"amount": 150,
+						"currency": "event_points"
+					}
+				]
+
+			}
+		],
+
+		"challenge_slots":
+		[
+			{
+				"name": "Daily Challenge 1",
+				"id": 1,
+				"challenge_list": "daily_challenge_list",
+				"reroll_cooldown": 82800,
+				"prevent_duplicate_challenges": true
+			},
+			{
+				"name": "Daily Challenge 2",
+				"id": 2,
+				"challenge_list": "daily_challenge_list",
+				"reroll_cooldown": 82800,
+				"prevent_duplicate_challenges": true
+			},
+			{
+				"name": "Win X PVP rounds",
+				"id": 3,
+				"challenge": "win_pvp_rounds"
+			},
+			{
+				"name": "Win X neutral rounds",
+				"id": 4,
+				"challenge": "win_pve_rounds"
+			},
+			{
+				"name": "Place top 3 in X Games",
+				"id": 5,
+				"challenge": "get_x_top3"
+			},
+			{
+				"name": "Buy X 5 cost units",
+				"id": 6,
+				"challenge": "buy_5cost_units"
+			},
+			{
+				"name": "Make X 3 star units",
+				"id": 7,
+				"challenge": "make_x_3stars"
+			},
+			{
+				"name": "Win X Rounds when all your heroes are ** or better",
+				"id": 8,
+				"challenge": "win_with_all_2stars"
+			},
+			{
+				"name": "Reach Level 10 X times",
+				"id": 9,
+				"challenge": "hit_lv_10"
+			},
+			{
+				"name": "Get X Winstreak gold",
+				"id": 10,
+				"challenge": "earn_streak_gold"
+			},
+			{
+				"name": "Get X Interest gold",
+				"id": 11,
+				"challenge": "earn_interest_gold"
+			},
+			{
+				"name": "Win X Rounds with an Alliance item affecting 3+ units",
+				"id": 12,
+				"challenge": "win_with_alliance_item_affecting_3_units"
+			},
+			{
+				"name": "Win X Rounds with 5+ synergies",
+				"id": 13,
+				"challenge": "win_with_5_active_synergies"
+			},
+			{
+				"name": "Win X Rounds with a 6+ hero synergy",
+				"id": 14,
+				"challenge": "win_with_a_6_synergy"
+			}
+			
+		],
+
+		"claims":
+		[
+			{
+				"name": "Auto Grant",
+				"id": 100,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"challenge_grants":
+					[
+						{
+							"slot": "Daily Challenge 1",
+							"activate": true
+						},
+						{
+							"slot": "Daily Challenge 2",
+							"activate": true
+						}
+					]
+
+				},
+				"criteria":
+				[
+				]
+			},
+			{
+				"dev_comment": "yo",
+				"name": "S0 Yo 4",
+				"id": 2,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Yo 4"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 8
+					}
+				]
+			},
+			{
+				"dev_comment": "yo",
+				"name": "S0 Yo 1",
+				"id": 3,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Yo 1"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 15
+					}
+				]
+			},
+			{
+				"dev_comment": "yo",
+				"name": "S0 Yo 2",
+				"id": 4,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Yo 2"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 20
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Base 2",
+				"id": 11,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Base 2"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 4
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Base 3",
+				"id": 12,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Base 3"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 9
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Base 4",
+				"id": 13,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Base 4"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 14
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Base 5",
+				"id": 14,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Base 5"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 19
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Base 6",
+				"id": 15,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Base 6"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 24
+					}
+				]
+			},
+			{
+				"name": "S0 Fireworks Effect 2",
+				"id": 20,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Fireworks Effect 2"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 3
+					}
+				]
+			},
+			{
+				"name": "S0 Fireworks Effect 1",
+				"id": 21,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Fireworks Effect 1"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 18
+					}
+				]
+			},
+			{
+				"name": "S0 Kill Steak Effect 1",
+				"id": 22,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Kill Steak Effect 1"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 13
+					}
+				]
+			},
+			{
+				"name": "S0 Kill Steak Effect 2",
+				"id": 23,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Kill Steak Effect 2"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 25
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Shape 1",
+				"id": 30,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Shape 1"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 2
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Shape 2",
+				"id": 31,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Shape 2"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 7
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Shape 3",
+				"id": 32,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Shape 3"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 12
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Shape 4",
+				"id": 33,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Shape 4"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 17
+					}
+				]
+			},
+			{
+				"name": "S0 Flag Shape 5",
+				"id": 34,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Flag Shape 5"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 22
+					}
+				]
+			},
+			{
+				"name": "S0 Teleport Effect 2",
+				"id": 40,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Teleport Effect 2"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 10
+					}
+				]
+			},
+			{
+				"name": "S0 Teleport Effect 1",
+				"id": 41,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Teleport Effect 1"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 23
+					}
+				]
+			},
+			{
+				"name": "S0 Map 1",
+				"id": 50,
+				"client_auto_claim": true,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+						{
+							"name": "S0 Map 1"
+						}
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 5
+					}
+				]
+			},
+			{
+				"name": "Victory Achievement Bronze",
+				"id": 150,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Win 1"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Win X PVP rounds",
+						"value": 1
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Win X neutral rounds",
+						"value": 1
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Place top 3 in X Games",
+						"value": 1
+					}
+				]
+			},
+			{
+				"name": "Victory Achievement Silver",
+				"id": 151,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Win 2"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Win X PVP rounds",
+						"value": 2
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Win X neutral rounds",
+						"value": 2
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Place top 3 in X Games",
+						"value": 2
+					}
+				]
+			},
+			{
+				"name": "Victory Achievement Gold",
+				"id": 152,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Win 3"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Win X PVP rounds",
+						"value": 3
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Win X neutral rounds",
+						"value": 3
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Place top 3 in X Games",
+						"value": 3
+					}
+				]
+			},
+			{
+				"name": "Units Achievement Bronze",
+				"id": 153,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Heroes 1"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Win X Rounds when all your heroes are ** or better",
+						"value": 1
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Buy X 5 cost units",
+						"value": 1
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Make X 3 star units",
+						"value": 1
+					}
+				]
+			},
+			{
+				"name": "Units Achievement Silver",
+				"id": 154,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Heroes 2"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Win X Rounds when all your heroes are ** or better",
+						"value": 2
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Buy X 5 cost units",
+						"value": 2
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Make X 3 star units",
+						"value": 2
+					}
+				]
+			},
+			{
+				"name": "Units Achievement Gold",
+				"id": 155,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Heroes 3"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Win X Rounds when all your heroes are ** or better",
+						"value": 3
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Buy X 5 cost units",
+						"value": 3
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Make X 3 star units",
+						"value": 3
+					}
+				]
+			},
+			{
+				"name": "Economy Achievement Bronze",
+				"id": 156,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Econ 1"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Reach Level 10 X times",
+						"value": 1
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Get X Winstreak gold",
+						"value": 1
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Get X Interest gold",
+						"value": 1
+					}
+				]
+			},
+			{
+				"name": "Economy Achievement Silver",
+				"id": 157,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Econ 2"
+                        }
+					]
+				},
+				"criteria":
+				[
+					{
+						"type": "challenge_level",
+						"slot": "Reach Level 10 X times",
+						"value": 2
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Get X Winstreak gold",
+						"value": 2
+					},
+					{
+						"type": "challenge_level",
+						"slot": "Get X Interest gold",
+						"value": 2
+					}
+				]
+			},
+            {
+                "name": "Economy Achievement Gold",
+                "id": 158,
+                "rewards": {
+                    "virtual_grant_items": [
+                        {
+                            "name": "S0 Flag Sigil Econ 3"
+                        }
+                    ]
+                },
+                "criteria": [
+                    {
+                        "type": "challenge_level",
+                        "slot": "Reach Level 10 X times",
+                        "value": 3
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Get X Winstreak gold",
+                        "value": 3
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Get X Interest gold",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+				"name": "Alliance Achievement Bronze",
+				"id": 159,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Alliance 1"
+                        }
+					]
+				},
+				"criteria":
+				[
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with an Alliance item affecting 3+ units",
+                        "value": 1
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with 5+ synergies",
+                        "value": 1
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with a 6+ hero synergy",
+                        "value": 1
+                    }
+				]
+			},
+			{
+				"name": "Alliance Achievement Silver",
+				"id": 160,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Alliance 2"
+                        }
+					]
+				},
+				"criteria":
+				[
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with an Alliance item affecting 3+ units",
+                        "value": 2
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with 5+ synergies",
+                        "value": 2
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with a 6+ hero synergy",
+                        "value": 2
+                    }
+				]
+			},
+			{
+				"name": "Alliance Achievement Gold",
+				"id": 161,
+				"rewards":
+				{
+					"virtual_grant_items":
+					[
+                        {
+                            "name": "S0 Flag Sigil Alliance 3"
+                        }
+					]
+				},
+				"criteria":
+				[
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with an Alliance item affecting 3+ units",
+                        "value": 3
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with 5+ synergies",
+                        "value": 3
+                    },
+                    {
+                        "type": "challenge_level",
+                        "slot": "Win X Rounds with a 6+ hero synergy",
+                        "value": 3
+                    }
+				]
+			}
+		],
+		"virtual_item_unlocks": [
+			{
+				"equip_slot": "profile_ring",
+				"item_def": "S0 Profile Ring 1",
+				"priority": 1,
+				"criteria": [
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 6
+					}
+				]
+			},
+			{
+				"equip_slot": "profile_ring",
+				"item_def": "S0 Profile Ring 2",
+				"priority": 2,
+				"criteria": [
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 11
+					}
+				]
+			},
+			{
+				"equip_slot": "profile_ring",
+				"item_def": "S0 Profile Ring 3",
+				"priority": 3,
+				"criteria": [
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 16
+					}
+				]
+			},
+			{
+				"equip_slot": "profile_ring",
+				"item_def": "S0 Profile Ring 4",
+				"priority": 4,
+				"criteria": [
+					{
+						"type": "currency_level",
+						"currency": "event_points",
+						"value": 21
+					}
+				]
+			}
+		]
+	}
+}

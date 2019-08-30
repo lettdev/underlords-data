@@ -1,0 +1,5657 @@
+"items_game"
+{
+	"game_info"
+	{
+		"first_valid_class"		"1"
+		"last_valid_class"		"1000"
+		"first_valid_item_slot"		"0"
+		"last_valid_item_slot"		"1"
+		"num_item_presets"		"0"
+	}
+	"rarities"
+	{
+		"common"
+		{
+			"value"		"1"
+			"loc_key"		"Rarity_Common"
+			"color"		"desc_common"
+			"next_rarity"		"uncommon"
+		}
+		"uncommon"
+		{
+			"value"		"2"
+			"loc_key"		"Rarity_Uncommon"
+			"color"		"desc_uncommon"
+			"next_rarity"		"rare"
+		}
+		"rare"
+		{
+			"value"		"3"
+			"loc_key"		"Rarity_Rare"
+			"color"		"desc_rare"
+		}
+	}
+	"qualities"
+	{
+		"normal"
+		{
+			"value"		"0"
+		}
+		"base"
+		{
+			"value"		"1"
+			"hexColor"		"#B2B2B2"
+		}
+	}
+	"colors"
+	{
+		"desc_common"
+		{
+			"color_name"		"ItemRarityCommon"
+			"hex_color"		"#b0c3d9"
+		}
+		"desc_uncommon"
+		{
+			"color_name"		"ItemRarityUncommon"
+			"hex_color"		"#5e98d9"
+		}
+		"desc_rare"
+		{
+			"color_name"		"ItemRarityRare"
+			"hex_color"		"#4b69ff"
+		}
+	}
+	"sound_materials"
+	{
+		"common"
+		{
+			"value"		"0"
+			"start_drag_sound"		"ui.inv_pickup"
+			"end_drag_sound"		"ui.inv_drop"
+			"equip_sound"		"ui.inv_equip"
+		}
+	}
+	"prefabs"
+	{
+		"default"
+		{
+			"item_class"		"default"
+			"item_type_name"		"#DAC_ItemType_Default"
+			"item_rarity"		"common"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"default_item"
+		{
+			"item_class"		"dac_wearable"
+			"item_type_name"		"#DAC_WearableType_Default"
+			"item_name"		"#DAC_Wearable_Default"
+			"item_quality"		"base"
+			"item_rarity"		"common"
+			"baseitem"		"1"
+			"min_ilevel"		"1"
+			"max_ilevel"		"1"
+			"hidden"		"1"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_title"
+		{
+			"item_class"		"player_title"
+			"item_type_name"		"#DAC_ItemType_PlayerTitle"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"title"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_flag_base"
+		{
+			"item_class"		"player_flag_base"
+			"item_type_name"		"#DAC_ItemType_PlayerFlagBase"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"flag_base"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_flag_image"
+		{
+			"item_class"		"player_flag_image"
+			"item_type_name"		"#DAC_ItemType_PlayerFlagImage"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"flag_image"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_flag_shape"
+		{
+			"item_class"		"player_flag_shape"
+			"item_type_name"		"#DAC_ItemType_PlayerFlagShape"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"flag_shape"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_chat_wheel"
+		{
+			"item_class"		"player_chat_wheel"
+			"item_type_name"		"#DAC_ItemType_PlayerChatWheel"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"chat_wheel"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_yo"
+		{
+			"item_class"		"player_yo"
+			"item_type_name"		"#DAC_ItemType_PlayerYo"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"yo"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"player_profile_ring"
+		{
+			"item_class"		"player_profile_ring"
+			"item_type_name"		"#DAC_ItemType_PlayerProfileRing"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"profile_ring"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"teleport"
+		{
+			"item_class"		"teleport"
+			"item_type_name"		"#DAC_ItemType_Teleport"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"teleport"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"fireworks"
+		{
+			"item_class"		"fireworks"
+			"item_type_name"		"#DAC_ItemType_Fireworks"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"fireworks"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"kill_streak"
+		{
+			"item_class"		"kill_streak"
+			"item_type_name"		"#DAC_ItemType_KillStreak"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"kill_streak"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"map"
+		{
+			"item_class"		"map"
+			"item_type_name"		"#DAC_ItemType_Map"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"map"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+		"underlord_talent"
+		{
+			"item_class"		"talent"
+			"item_type_name"		"#DAC_ItemType_Talent"
+			"item_rarity"		"common"
+			"global_loadout_slot"		"talent1"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+		}
+	}
+	"items"
+	{
+		"default"
+		{
+			"name"		"default"
+			"hidden"		"1"
+			"item_class"		"dota_item_wearable"
+			"item_name"		"#TF_Default_ItemDef"
+			"item_slot"		"weapon"
+			"item_quality"		"normal"
+			"min_ilevel"		"1"
+			"max_ilevel"		"1"
+		}
+		"1"
+		{
+			"name"		"Anti-Mage's Glaive"
+			"prefab"		"default_item"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_antimage"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_antimage/antimage_blade_primary.vpcf"
+				}
+			}
+		}
+		"2"
+		{
+			"name"		"Doom lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-10"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/doom/doom_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_doom_bringer"		"1"
+			}
+		}
+		"3"
+		{
+			"name"		"Doom lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-06-10"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/doom/doom_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_doom_bringer"		"1"
+			}
+		}
+		"4"
+		{
+			"name"		"Doom lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-06-10"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/doom/doom_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_doom_bringer"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/doom/doom_ambient_level3.vpcf"
+				}
+			}
+		}
+		"5"
+		{
+			"name"		"Shadow Shaman lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"body_head"
+			"model_player"		"models/heroes/shadowshaman/shadowshaman_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_shadow_shaman"		"1"
+			}
+		}
+		"6"
+		{
+			"name"		"Juggernaut's Mask"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/juggernaut/jugg_mask.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+		}
+		"7"
+		{
+			"name"		"Juggernaut's Weapon"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"model_player"		"models/heroes/juggernaut/jugg_sword.vmdl"
+			"particle_folder"		"particles/units/heroes/hero_juggernaut"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_juggernaut/juggernaut_blade_generic.vpcf"
+				}
+			}
+		}
+		"8"
+		{
+			"name"		"Juggernaut's Cape"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/juggernaut/jugg_cape.vmdl"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+		}
+		"9"
+		{
+			"name"		"Juggernaut's Bracers"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/juggernaut/jugg_bracers.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+		}
+		"11"
+		{
+			"name"		"Lone Druid lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-08"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/lone_druid/lone_druid_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lone_druid"		"1"
+			}
+		}
+		"13"
+		{
+			"name"		"Anti-Mage lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-22"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/antimage/antimage_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_antimage"		"1"
+			}
+		}
+		"14"
+		{
+			"name"		"Wind Ranger lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-08"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/windrunner/windrunner_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_windrunner"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_windrunner/windrunner_bowstring.vpcf"
+				}
+			}
+		}
+		"21"
+		{
+			"name"		"Blood Seeker lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-16"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/blood_seeker/bloodseeker_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bloodseeker"		"1"
+			}
+		}
+		"24"
+		{
+			"name"		"Tusk lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-16"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"neck"
+			"model_player"		"models/heroes/tuskarr/tusk_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tusk"		"1"
+			}
+		}
+		"26"
+		{
+			"name"		"Gyrocopter lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/gyro/gyro_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_gyrocopter"		"1"
+			}
+		}
+		"29"
+		{
+			"name"		"Lycan lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-20"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/lycan/lycan_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lycan"		"1"
+			}
+		}
+		"32"
+		{
+			"name"		"Alchemist lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-20"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/alchemist/alchemist_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_alchemist"		"1"
+			}
+		}
+		"34"
+		{
+			"name"		"Queen of Pain lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/queenofpain/queenofpain_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_queenofpain"		"1"
+			}
+		}
+		"35"
+		{
+			"name"		"Queen of Pain lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/queenofpain/queenofpain_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_queenofpain"		"1"
+			}
+		}
+		"36"
+		{
+			"name"		"Queen of Pain lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/queenofpain/queenofpain_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_queenofpain"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/queenofpain/queenofpain_ambient_level3.vpcf"
+				}
+			}
+		}
+		"37"
+		{
+			"name"		"Tidehunter's Lunch"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/tidehunter/tidehunter_fish.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tidehunter"		"1"
+			}
+		}
+		"38"
+		{
+			"name"		"Kunkka lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-04"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/kunkka/kunkka_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_kunkka"		"1"
+			}
+		}
+		"39"
+		{
+			"name"		"Kunkka lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-04"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/kunkka/kunkka_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_kunkka"		"1"
+			}
+		}
+		"40"
+		{
+			"name"		"Kunkka lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-04"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/kunkka/kunkka_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_kunkka"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_kunkka/kunkka_ambient_lvl3.vpcf"
+				}
+			}
+		}
+		"42"
+		{
+			"name"		"Anti-Mage lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-05-22"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/antimage/antimage_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_antimage"		"1"
+			}
+		}
+		"43"
+		{
+			"name"		"Anti-Mage lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-05-22"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/antimage/antimage_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_antimage"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/antimage/antimage_ambient_level3.vpcf"
+				}
+			}
+		}
+		"44"
+		{
+			"name"		"Puck lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-22"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/puck/puck_lvl1.vmdl"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_puck"		"1"
+			}
+		}
+		"47"
+		{
+			"name"		"Pudge's Rusty Meathook"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/pudge/righthook.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"1"
+			}
+		}
+		"50"
+		{
+			"name"		"Bounty Hunter's Weapon"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"model_player"		"models/heroes/bounty_hunter/bounty_hunter_rweapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"51"
+		{
+			"name"		"Bounty Hunter's Offhand Weapon"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/bounty_hunter/bounty_hunter_lweapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"52"
+		{
+			"name"		"Bounty Hunter's Back"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/bounty_hunter/bounty_hunter_backpack.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"53"
+		{
+			"name"		"Bounty Hunter's Armor"
+			"prefab"		"default_item"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/bounty_hunter/bounty_hunter_pads.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"54"
+		{
+			"name"		"Bounty Hunter's Shoulder"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/bounty_hunter/bounty_hunter_bweapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"55"
+		{
+			"name"		"Bounty Hunter's Bandana"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/bounty_hunter/bounty_hunter_bandana.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"62"
+		{
+			"name"		"Juggernaut's Legs"
+			"prefab"		"default_item"
+			"item_slot"		"legs"
+			"model_player"		"models/heroes/juggernaut/juggernaut_pants.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+		}
+		"63"
+		{
+			"name"		"Enchantress lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-29"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/enchantress/enchantress_lvl3.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_enchantress"		"1"
+			}
+		}
+		"66"
+		{
+			"name"		"Axe lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-07"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/axe/axe_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_axe"		"1"
+			}
+		}
+		"67"
+		{
+			"name"		"Axe lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-06-07"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/axe/axe_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_axe"		"1"
+			}
+		}
+		"68"
+		{
+			"name"		"Axe lvl3"
+			"prefab"		"default_item"
+			"rank"		"3"
+			"creation_date"		"2019-06-07"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/axe/axe_lvl3.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_axe"		"1"
+			}
+		}
+		"69"
+		{
+			"name"		"Tidehunter lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-17"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/tidehunter/tidehunter_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tidehunter"		"1"
+			}
+		}
+		"73"
+		{
+			"name"		"Tidehunter's Lunch lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-17"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/tidehunter/tidehunter_fish.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tidehunter"		"1"
+			}
+		}
+		"74"
+		{
+			"name"		"Lina lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-18"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/lina/lina_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lina"		"1"
+			}
+		}
+		"77"
+		{
+			"name"		"Phantom Assassin lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/phantom_assassin/phantom_assassin_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_phantom_assassin"		"1"
+			}
+		}
+		"78"
+		{
+			"name"		"Phantom Assassin lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/phantom_assassin/phantom_assassin_lvl2.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_phantom_assassin"		"1"
+			}
+		}
+		"79"
+		{
+			"name"		"Phantom Assassin lvl3"
+			"prefab"		"default_item"
+			"rank"		"3"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/phantom_assassin/phantom_assassin_lvl3.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_phantom_assassin"		"1"
+			}
+		}
+		"80"
+		{
+			"name"		"Venomancer lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/venomancer/venomancer_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_venomancer"		"1"
+			}
+		}
+		"82"
+		{
+			"name"		"Gyrocopter lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/gyro/gyro_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_gyrocopter"		"1"
+			}
+		}
+		"83"
+		{
+			"name"		"Gyrocopter lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/gyro/gyro_lvl3.vmdl"
+			"rank"		"3"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_gyrocopter"		"1"
+			}
+		}
+		"84"
+		{
+			"name"		"Sand King lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/sand_king/sand_king_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_sand_king"		"1"
+			}
+		}
+		"94"
+		{
+			"name"		"Witch Doctor's Head"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/witchdoctor/witchdoctor_head.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_witch_doctor"		"1"
+			}
+		}
+		"95"
+		{
+			"name"		"Witch Doctor's Bag"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/witchdoctor/witchdoctor_bag.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_witch_doctor"		"1"
+			}
+		}
+		"96"
+		{
+			"name"		"Witch Doctor's Belt"
+			"prefab"		"default_item"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/witchdoctor/witchdoctor_belt.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_witch_doctor"		"1"
+			}
+		}
+		"97"
+		{
+			"name"		"Witch Doctor's Staff"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/witchdoctor/witchdoctor_staff.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_witch_doctor"		"1"
+			}
+		}
+		"108"
+		{
+			"name"		"Lina lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-18"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/lina/lina_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lina"		"1"
+			}
+		}
+		"109"
+		{
+			"name"		"Lina lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-18"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/lina/lina_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lina"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/lina/lina_ambient_level3.vpcf"
+				}
+			}
+		}
+		"110"
+		{
+			"name"		"Medusa lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/medusa/medusa_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_medusa"		"1"
+			}
+		}
+		"117"
+		{
+			"name"		"Omniknight lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/omniknight/omniknight_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_omniknight"		"1"
+			}
+		}
+		"120"
+		{
+			"name"		"Timbersaw lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/shredder/shredder_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_shredder"		"1"
+			}
+		}
+		"121"
+		{
+			"name"		"Timbersaw lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-05-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/shredder/shredder_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_shredder"		"1"
+			}
+		}
+		"122"
+		{
+			"name"		"Timbersaw lvl3"
+			"prefab"		"default_item"
+			"rank"		"3"
+			"creation_date"		"2019-05-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/shredder/shredder_lvl3.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_shredder"		"1"
+			}
+		}
+		"123"
+		{
+			"name"		"Luna lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-24"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"body_head"
+			"model_player"		"models/heroes/luna/luna_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_luna"		"1"
+			}
+		}
+		"124"
+		{
+			"name"		"Luna lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-05-24"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"body_head"
+			"model_player"		"models/heroes/luna/luna_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_luna"		"1"
+			}
+		}
+		"125"
+		{
+			"name"		"Luna lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-05-24"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"body_head"
+			"model_player"		"models/heroes/luna/luna_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_luna"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/luna/luna_ambient_level3.vpcf"
+				}
+			}
+		}
+		"126"
+		{
+			"name"		"Drow's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-29"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_drow"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_drow_ranger"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_drow/drow_bowstring.vpcf"
+				}
+			}
+		}
+		"137"
+		{
+			"name"		"Venomancer lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/venomancer/venomancer_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_venomancer"		"1"
+			}
+		}
+		"138"
+		{
+			"name"		"Venomancer lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-06-12"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/venomancer/venomancer_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_venomancer"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/venomancer/venomancer_ambient_level3.vpcf"
+				}
+			}
+		}
+		"140"
+		{
+			"name"		"Abaddon lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-14"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/abaddon/abaddon_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_abaddon"		"1"
+			}
+		}
+		"142"
+		{
+			"name"		"Disruptor's Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/disruptor/weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"143"
+		{
+			"name"		"Disruptor's Bracers"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/disruptor/bracers.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"144"
+		{
+			"name"		"Disruptor's Hair"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/disruptor/hair.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"145"
+		{
+			"name"		"Disruptor's Back"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/disruptor/back.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"146"
+		{
+			"name"		"Disruptor's Shoulder Armor"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/disruptor/shoulder.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"147"
+		{
+			"name"		"Disruptor's Mount"
+			"prefab"		"default_item"
+			"item_slot"		"legs"
+			"model_player"		"models/heroes/disruptor/mount.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"167"
+		{
+			"name"		"Medusa lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/medusa/medusa_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_medusa"		"1"
+			}
+		}
+		"168"
+		{
+			"name"		"Medusa lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/medusa/medusa_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_medusa"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_medusa/medusa_ambient_level3.vpcf"
+				}
+			}
+		}
+		"169"
+		{
+			"name"		"Templar Assassin lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/lanaya/lanaya_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_templar_assassin"		"1"
+			}
+		}
+		"170"
+		{
+			"name"		"Templar Assassin lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/lanaya/lanaya_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_templar_assassin"		"1"
+			}
+		}
+		"171"
+		{
+			"name"		"Templar Assassin lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/lanaya/lanaya_lvl3.vmdl"
+			"rank"		"3"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_templar_assassin"		"1"
+			}
+		}
+		"172"
+		{
+			"name"		"Drow lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/drow/drow_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_drow_ranger"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"175"
+		{
+			"name"		"Slardar lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Slardar_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/slardar/slardar_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slardar"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"178"
+		{
+			"name"		"Shadow Fiend lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Shadow_Fiend_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/shadow_fiend/shadow_fiend_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_nevermore"		"1"
+			}
+		}
+		"179"
+		{
+			"name"		"Gyrocopter's Homing Missile"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/gyro/gyro_missile.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_gyrocopter"		"1"
+			}
+		}
+		"181"
+		{
+			"name"		"Chaos Knight's Horse"
+			"prefab"		"default_item"
+			"item_slot"		"mount"
+			"model_player"		"models/heroes/chaos_knight/chaos_knight_mount.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_chaos_knight"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_chaos_knight/chaos_knight_horse_ambient.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_chaos_knight/chaos_knight_ambient_tail.vpcf"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_chaos_knight/chaos_knight_feet_effects.vpcf"
+				}
+			}
+		}
+		"182"
+		{
+			"name"		"Warlock's Golem"
+			"prefab"		"default_item"
+			"item_slot"		"ability_ultimate"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"183"
+		{
+			"name"		"Chaos Knight's Shoulder Guards"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/chaos_knight/chaos_knight_shoulderpads.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_chaos_knight"		"1"
+			}
+		}
+		"184"
+		{
+			"name"		"Chaos Knight's Helmet"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/chaos_knight/chaos_knight_helmet.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_chaos_knight"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_chaos_knight/chaos_knight_ambient_helmet.vpcf"
+				}
+			}
+		}
+		"185"
+		{
+			"name"		"Chaos Knight's Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/chaos_knight/chaos_knight_mace.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_chaos_knight"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_chaos_knight/chaos_knight_ambient_mace.vpcf"
+				}
+			}
+		}
+		"186"
+		{
+			"name"		"Chaos Knight's Shield"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/chaos_knight/chaos_knight_shield.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_chaos_knight"		"1"
+			}
+		}
+		"199"
+		{
+			"name"		"Pudge lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Pudge_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/pudge/pudge_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"206"
+		{
+			"name"		"Drow lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-05-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/drow/drow_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_drow_ranger"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"207"
+		{
+			"name"		"Drow lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-05-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/drow/drow_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_drow_ranger"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_drow/drow_ambient_lvl3.vpcf"
+				}
+			}
+		}
+		"208"
+		{
+			"name"		"Dragon Knight lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/dragon_knight/dragon_knight_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_dragon_knight"		"1"
+			}
+		}
+		"209"
+		{
+			"name"		"Dragon Knight lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-05-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/dragon_knight/dragon_knight_lvl2.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_dragon_knight"		"1"
+			}
+		}
+		"210"
+		{
+			"name"		"Dragon Knight lvl3"
+			"prefab"		"default_item"
+			"rank"		"3"
+			"creation_date"		"2019-05-28"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/dragon_knight/dragon_knight_lvl3.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_dragon_knight"		"1"
+			}
+		}
+		"211"
+		{
+			"name"		"Necrophos' Sickle"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/necrolyte/necrolyte_sickle.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_necrolyte"		"1"
+			}
+		}
+		"212"
+		{
+			"name"		"Necrophos' Beard"
+			"prefab"		"default_item"
+			"item_slot"		"body_head"
+			"model_player"		"models/heroes/necrolyte/beard.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_necrolyte"		"1"
+			}
+		}
+		"213"
+		{
+			"name"		"Necrophos' Headdress"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/necrolyte/hat.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_necrolyte"		"1"
+			}
+		}
+		"214"
+		{
+			"name"		"Necrophos' Vestments"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/necrolyte/shoulders.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_necrolyte"		"1"
+			}
+		}
+		"215"
+		{
+			"name"		"Abaddon lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-06-14"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/abaddon/abaddon_lvl2.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_abaddon"		"1"
+			}
+		}
+		"216"
+		{
+			"name"		"Abaddon lvl3"
+			"prefab"		"default_item"
+			"rank"		"3"
+			"creation_date"		"2019-06-14"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/abaddon/abaddon_lvl3.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_abaddon"		"1"
+			}
+		}
+		"217"
+		{
+			"name"		"Treant Protector lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-14"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/treant_protector/treant_protector_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_treant"		"1"
+			}
+		}
+		"219"
+		{
+			"name"		"Mirana lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/mirana/mirana_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_mirana"		"1"
+			}
+		}
+		"227"
+		{
+			"name"		"Tinker lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-17"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"body_head"
+			"model_player"		"models/heroes/tinker/tinker_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tinker"		"1"
+			}
+		}
+		"230"
+		{
+			"name"		"Batrider lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/batrider/batrider_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_batrider"		"1"
+			}
+		}
+		"235"
+		{
+			"name"		"Clockwerk lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-06-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/rattletrap/rattletrap_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_rattletrap"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"1"
+			}
+		}
+		"236"
+		{
+			"name"		"Clockwerk lvl2"
+			"prefab"		"default_item"
+			"rank"		"2"
+			"creation_date"		"2019-06-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/rattletrap/rattletrap_lvl2.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_rattletrap"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"1"
+			}
+		}
+		"237"
+		{
+			"name"		"Clockwerk lvl3"
+			"prefab"		"default_item"
+			"rank"		"3"
+			"creation_date"		"2019-06-21"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"model_player"		"models/heroes/rattletrap/rattletrap_lvl3.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_rattletrap"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"1"
+			}
+		}
+		"238"
+		{
+			"name"		"Crystal Maiden lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-06-22"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/crystal_maiden/crystal_maiden_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_crystal_maiden"		"1"
+			}
+		}
+		"239"
+		{
+			"name"		"Warlock's Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/warlock/warlock_staff.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_warlock/warlock_ambient_staff.vpcf"
+				}
+			}
+		}
+		"240"
+		{
+			"name"		"Warlock's Lantern"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/warlock/warlock_lantern.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_warlock/warlock_ambient_smoke.vpcf"
+				}
+			}
+		}
+		"241"
+		{
+			"name"		"Warlock's Head"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/warlock/warlock_cape.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"242"
+		{
+			"name"		"Warlock's Shoulder"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/warlock/warlock_shoulder.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"243"
+		{
+			"name"		"Warlock's Arms"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/warlock/warlock_bracers.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"244"
+		{
+			"name"		"Warlock's Robe"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/warlock/warlock_robe.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"245"
+		{
+			"name"		"Warlock's Bag"
+			"prefab"		"default_item"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/warlock/warlock_bag.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"247"
+		{
+			"name"		"Mirana lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/mirana/mirana_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_mirana"		"1"
+			}
+		}
+		"248"
+		{
+			"name"		"Mirana lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/mirana/mirana_lvl3.vmdl"
+			"rank"		"3"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_mirana"		"1"
+			}
+		}
+		"249"
+		{
+			"name"		"Razor lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/razor/razor_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_razor"		"1"
+			}
+		}
+		"250"
+		{
+			"name"		"Razor lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/razor/razor_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_razor"		"1"
+			}
+		}
+		"251"
+		{
+			"name"		"Razor lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/razor/razor_lvl3.vmdl"
+			"rank"		"3"
+			"static_attributes"
+			{
+				"is commodity"
+				{
+					"attribute_class"		"is commodity"
+					"value"		"1"
+				}
+				"not marketable"
+				{
+					"attribute_class"		"not marketable"
+					"value"		"1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"		"cannot trade"
+					"value"		"1"
+				}
+			}
+			"used_by_heroes"
+			{
+				"npc_dota_hero_razor"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/models/heroes/razor/razor_ambient_level3.vpcf"
+				}
+			}
+		}
+		"252"
+		{
+			"name"		"Keeper of the Light Horse"
+			"prefab"		"default_item"
+			"item_slot"		"mount"
+			"model_player"		"models/heroes/keeper_of_the_light/kotl_mount.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_keeper_of_the_light"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"253"
+		{
+			"name"		"Keeper of the Light Staff"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/keeper_of_the_light/kotl_staff.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_keeper_of_the_light"		"1"
+			}
+		}
+		"254"
+		{
+			"name"		"Keeper of the Light Hood"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/keeper_of_the_light/kotl_hood.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_keeper_of_the_light"		"1"
+			}
+		}
+		"255"
+		{
+			"name"		"Keeper of the Light Skirt"
+			"prefab"		"default_item"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/keeper_of_the_light/kotl_skirt.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_keeper_of_the_light"		"1"
+			}
+		}
+		"256"
+		{
+			"name"		"Keeper of the Light Horse Armor"
+			"prefab"		"default_item"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/keeper_of_the_light/kotl_horse_accesories.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_keeper_of_the_light"		"1"
+			}
+		}
+		"257"
+		{
+			"name"		"Arc Warden lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/arc_warden/arc_warden_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_arc_warden"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"258"
+		{
+			"name"		"Pudge's Back Rings and Apron"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/pudge/back.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"259"
+		{
+			"name"		"Pudge's Cleaver"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon"
+			"model_player"		"models/heroes/pudge/leftweapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"260"
+		{
+			"name"		"Pudge's Left Arm"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/pudge/leftarm.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"261"
+		{
+			"name"		"Pudge's Bracer"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/pudge/bracer.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"262"
+		{
+			"name"		"Pudge's Toupee"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/pudge/hair.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"267"
+		{
+			"name"		"Arc Warden lvl2"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/arc_warden/arc_warden_lvl2.vmdl"
+			"rank"		"2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_arc_warden"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"273"
+		{
+			"name"		"Slardar Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/slardar/slardar_weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slardar"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"274"
+		{
+			"name"		"Slardar Fin"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/slardar/slardar_back.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slardar"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"275"
+		{
+			"name"		"Slardar Head"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slardar"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"276"
+		{
+			"name"		"Slardar Arms"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/slardar/slardar_arms.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slardar"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"281"
+		{
+			"name"		"Sniper's Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/sniper/weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_sniper"		"1"
+			}
+		}
+		"282"
+		{
+			"name"		"Sniper's Cape"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/sniper/cape.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_sniper"		"1"
+			}
+		}
+		"283"
+		{
+			"name"		"Sniper's Head Gear"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/sniper/headitem.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_sniper"		"1"
+			}
+		}
+		"284"
+		{
+			"name"		"Sniper's Shoulder Armor"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/sniper/shoulder.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_sniper"		"1"
+			}
+		}
+		"285"
+		{
+			"name"		"Sniper's Bracers"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/sniper/bracer.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_sniper"		"1"
+			}
+		}
+		"286"
+		{
+			"name"		"Arc Warden lvl3"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-27"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/arc_warden/arc_warden_lvl3.vmdl"
+			"rank"		"3"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_arc_warden"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"290"
+		{
+			"name"		"Morphling lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Morphling_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/morphling/morphling_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+		}
+		"293"
+		{
+			"name"		"Ogre Magi lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Ogre_Magi_lvl1"
+			"item_quality"		"normal"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/ogre_magi/ogre_magi_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_ogre_magi"		"1"
+			}
+		}
+		"306"
+		{
+			"name"		"Terrorblade's Wings"
+			"prefab"		"default_item"
+			"creation_date"		"2013-12-17"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/terrorblade/wings.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_terrorblade"		"1"
+			}
+		}
+		"307"
+		{
+			"name"		"Terrorblade's Weapons"
+			"prefab"		"default_item"
+			"creation_date"		"2013-12-19"
+			"model_player"		"models/heroes/terrorblade/weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_terrorblade"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_ambient_sword_l.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_ambient_sword_r.vpcf"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_ambient_sword_blade.vpcf"
+				}
+				"asset_modifier3"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_ambient_sword_blade_2.vpcf"
+				}
+			}
+		}
+		"308"
+		{
+			"name"		"Storm Spirit's Hat"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/storm_spirit/storm_hat.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_storm_spirit"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_stormspirit/stormspirit_head_ambient.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_stormspirit/storm_spirit_ambient_eyes.vpcf"
+				}
+			}
+		}
+		"309"
+		{
+			"name"		"Storm Spirit's Shoulder"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/storm_spirit/storm_shoulder.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_storm_spirit"		"1"
+			}
+		}
+		"310"
+		{
+			"name"		"Storm Spirit's Armor"
+			"prefab"		"default_item"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/storm_spirit/storm_shirt.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_storm_spirit"		"1"
+			}
+		}
+		"311"
+		{
+			"name"		"Disruptor lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Disruptor_lvl1"
+			"item_quality"		"normal"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/disruptor/disruptor_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+		}
+		"313"
+		{
+			"name"		"Beastmaster's Weapons"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/beastmaster/beastmaster_weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"314"
+		{
+			"name"		"Beastmasters's Head"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/beastmaster/beastmaster_head.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"315"
+		{
+			"name"		"Beastmaster's Shoulder"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/beastmaster/beastmaster_shoulder.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"316"
+		{
+			"name"		"Beastmaster's Arms"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/beastmaster/beastmaster_arms.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"317"
+		{
+			"name"		"Beastmaster's Belt"
+			"prefab"		"default_item"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/beastmaster/beastmaster_belt.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"320"
+		{
+			"name"		"Troll Warlord lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Troll_Warlord_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/troll_warlord/troll_warlord_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_troll_warlord"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"331"
+		{
+			"name"		"Lich's Belt"
+			"prefab"		"default_item"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/lich/lich_dress.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lich"		"1"
+			}
+		}
+		"332"
+		{
+			"name"		"Lich's Neck"
+			"prefab"		"default_item"
+			"item_slot"		"neck"
+			"model_player"		"models/heroes/lich/lich_neck_rock.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lich"		"1"
+			}
+		}
+		"333"
+		{
+			"name"		"Lich's Bracers"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/lich/lich_bracer.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lich"		"1"
+			}
+		}
+		"334"
+		{
+			"name"		"Lich's Back"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/lich/lich_horns.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lich"		"1"
+			}
+		}
+		"335"
+		{
+			"name"		"Anti-Mage's Offhand Glaive"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_antimage"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_antimage/antimage_blade_offhand.vpcf"
+				}
+			}
+		}
+		"336"
+		{
+			"name"		"Slark's Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/slark/weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slark"		"1"
+			}
+		}
+		"341"
+		{
+			"name"		"Techies lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Techies_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"back"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/techies/techies_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"344"
+		{
+			"name"		"Warlock lvl1"
+			"prefab"		"default_item"
+			"creation_date"		"2019-07-30"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_name"		"#DOTA_Item_Warlock_lvl1"
+			"item_quality"		"normal"
+			"item_slot"		"head"
+			"item_type_name"		"#DOTA_WearableType_Unspecified_Wearable_Type"
+			"model_player"		"models/heroes/warlock/warlock_lvl1.vmdl"
+			"rank"		"1"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_warlock"		"1"
+			}
+		}
+		"353"
+		{
+			"name"		"Slark's Bracers"
+			"prefab"		"default_item"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/slark/bracer.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slark"		"1"
+			}
+		}
+		"354"
+		{
+			"name"		"Slark's Shoulder Armor"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/slark/shoulder.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slark"		"1"
+			}
+		}
+		"355"
+		{
+			"name"		"Slark's Cape"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/slark/cape.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slark"		"1"
+			}
+		}
+		"356"
+		{
+			"name"		"Slark's Hood"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/slark/hood.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slark"		"1"
+			}
+		}
+		"373"
+		{
+			"name"		"Troll Warlord's Default Weapon"
+			"prefab"		"default_item"
+			"model_player"		"models/heroes/troll_warlord/troll_warlord_weapons.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_troll_warlord"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"380"
+		{
+			"name"		"Troll Warlord's Default Melee Off-Hand Weapon"
+			"prefab"		"default_item"
+			"item_slot"		"offhand_weapon2"
+			"model_player"		"models/heroes/troll_warlord/troll_warlord_axe_melee_l.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_troll_warlord"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"1"
+			}
+		}
+		"387"
+		{
+			"name"		"Shadow Fiend's Head"
+			"prefab"		"default_item"
+			"creation_date"		"2014-04-15"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/shadow_fiend/shadow_fiend_head.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_nevermore"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_nevermore/shadow_fiend_ambient_eyes.vpcf"
+				}
+			}
+		}
+		"391"
+		{
+			"name"		"Pudge's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-08-18"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_pudge"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_pudge/pudge_ambient_flies.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_pudge/pudge_ambient_chain.vpcf"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_pudge/pudge_ambient_chain_right.vpcf"
+				}
+			}
+		}
+		"394"
+		{
+			"name"		"Techies Bomb Arsenal"
+			"prefab"		"default_item"
+			"creation_date"		"2014-08-21"
+			"item_slot"		"arms"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+		}
+		"410"
+		{
+			"name"		"Troll Warlord's Default Shoulders"
+			"prefab"		"default_item"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/troll_warlord/troll_warlord_shoulders.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_troll_warlord"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"411"
+		{
+			"name"		"Troll Warlord's Default Head"
+			"prefab"		"default_item"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/troll_warlord/troll_warlord_head.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_troll_warlord"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"412"
+		{
+			"name"		"Troll Warlord's Default Armor"
+			"prefab"		"default_item"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/troll_warlord/mesh/troll_warlord_armor_model_lod0.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_troll_warlord"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"425"
+		{
+			"name"		"Nature's Prophet lvl1"
+			"prefab"		"default_item"
+			"rank"		"1"
+			"creation_date"		"2019-05-15"
+			"developer"		"0"
+			"image_inventory"		"econ/testitem_slot_empty"
+			"item_quality"		"normal"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/furion/furion_lvl1.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_furion"		"1"
+			}
+		}
+		"470"
+		{
+			"name"		"Pudge's Belt"
+			"prefab"		"default_item"
+			"creation_date"		"2013-11-18"
+			"item_slot"		"belt"
+			"model_player"		"models/heroes/pudge/belt.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_pudge"		"1"
+			}
+		}
+		"476"
+		{
+			"name"		"Terrorblade's Armor"
+			"prefab"		"default_item"
+			"creation_date"		"2013-12-19"
+			"item_slot"		"armor"
+			"model_player"		"models/heroes/terrorblade/armor.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_terrorblade"		"1"
+			}
+		}
+		"478"
+		{
+			"name"		"Terrorblade's Head"
+			"prefab"		"default_item"
+			"creation_date"		"2013-12-19"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/terrorblade/horns.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_terrorblade"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_ambient_eyes.vpcf"
+				}
+			}
+		}
+		"486"
+		{
+			"name"		"Shadow Fiend's Shoulders"
+			"prefab"		"default_item"
+			"creation_date"		"2014-04-15"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/shadow_fiend/shadow_fiend_shoulders.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_nevermore"		"1"
+			}
+		}
+		"487"
+		{
+			"name"		"Techies Spoon Costume"
+			"prefab"		"default_item"
+			"creation_date"		"2014-03-04"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/techies/techies_barrel.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"488"
+		{
+			"name"		"Shadow Fiend's Arms"
+			"prefab"		"default_item"
+			"creation_date"		"2014-04-15"
+			"item_slot"		"arms"
+			"model_player"		"models/heroes/shadow_fiend/shadow_fiend_arms.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_nevermore"		"1"
+			}
+		}
+		"489"
+		{
+			"name"		"Techies Slingshot"
+			"prefab"		"default_item"
+			"creation_date"		"2014-03-04"
+			"model_player"		"models/heroes/techies/techies_spleen_weapon.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"490"
+		{
+			"name"		"Techies Cart"
+			"prefab"		"default_item"
+			"creation_date"		"2014-03-04"
+			"item_slot"		"mount"
+			"model_player"		"models/heroes/techies/techies_cart.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_techies/techies_ambient.vpcf"
+				}
+			}
+		}
+		"491"
+		{
+			"name"		"Techies Squee Costume"
+			"prefab"		"default_item"
+			"creation_date"		"2014-03-04"
+			"item_slot"		"head"
+			"model_player"		"models/heroes/techies/techies_squee_costume.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"492"
+		{
+			"name"		"Techies Spleen Costume"
+			"prefab"		"default_item"
+			"creation_date"		"2014-03-04"
+			"item_slot"		"shoulder"
+			"model_player"		"models/heroes/techies/techies_spleen_costume.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"497"
+		{
+			"name"		"Tiny's Tree"
+			"prefab"		"default_item"
+			"creation_date"		"2014-06-16"
+			"model_player"		"models/heroes/tiny_01/tiny_01_tree.vmdl"
+			"visuals"
+			{
+				"skip_model_combine"		"1"
+			}
+		}
+		"498"
+		{
+			"name"		"Enigma's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-04"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_enigma"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_enigma"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_enigma/enigma_ambient_eyes.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_enigma/enigma_ambient_body.vpcf"
+				}
+			}
+		}
+		"499"
+		{
+			"name"		"Techies Sign"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-01"
+			"item_slot"		"belt"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_techies"		"1"
+			}
+		}
+		"502"
+		{
+			"name"		"Crystal Maiden's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_crystalmaiden"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_crystal_maiden"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_crystalmaiden/maiden_ambient_mouth.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_crystalmaiden/maiden_ambient_hand.vpcf"
+				}
+			}
+		}
+		"504"
+		{
+			"name"		"Lina's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_lina"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lina"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_lina/lina_flame_hand_dual.vpcf"
+				}
+			}
+		}
+		"506"
+		{
+			"name"		"Lich's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_lich"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lich"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_lich/lich_ambient_frost.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_lich/lich_ambient_frost_legs.vpcf"
+				}
+			}
+		}
+		"507"
+		{
+			"name"		"Morphling's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_morphling"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_morphling/morphling_ambient_new.vpcf"
+				}
+			}
+		}
+		"508"
+		{
+			"name"		"Necrophos' Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_necrolyte"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_necrolyte"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_necrolyte/necrolyte_ambient_glow.vpcf"
+				}
+			}
+		}
+		"509"
+		{
+			"name"		"Shadow Fiend's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_nevermore"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_nevermore"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_nevermore/nevermore_trail.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_nevermore/nevermore_ambient_glow.vpcf"
+				}
+			}
+		}
+		"510"
+		{
+			"name"		"Puck's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_puck"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_puck"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_puck/puck_ambient.vpcf"
+				}
+			}
+		}
+		"512"
+		{
+			"name"		"Slardar's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_slardar"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slardar"		"1"
+			}
+		}
+		"513"
+		{
+			"name"		"Razor's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_razor"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_razor"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_razor/razor_ambient.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_razor/razor_ambient_main.vpcf"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_razor/razor_whip.vpcf"
+				}
+			}
+		}
+		"514"
+		{
+			"name"		"Templar Assassin's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_templar_assassin"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_templar_assassin"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_templar_assassin/templar_assassin_ambient.vpcf"
+				}
+			}
+		}
+		"515"
+		{
+			"name"		"Tinker's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_tinker"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tinker"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_tinker/tinker_ambient.vpcf"
+				}
+			}
+		}
+		"516"
+		{
+			"name"		"Tiny's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-05"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_tiny"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tiny"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_tiny/tiny_ambient.vpcf"
+				}
+			}
+		}
+		"518"
+		{
+			"name"		"Venomancer's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_venomancer"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_venomancer"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_venomancer/veno_ambient.vpcf"
+				}
+			}
+		}
+		"519"
+		{
+			"name"		"Viper's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_viper"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_viper"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_viper/viper_ambient_glow.vpcf"
+				}
+			}
+		}
+		"522"
+		{
+			"name"		"Abaddon's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_abaddon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_abaddon"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_abaddon/abaddon_ambient.vpcf"
+				}
+			}
+		}
+		"525"
+		{
+			"name"		"Disruptor's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_disruptor"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_disruptor"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_disruptor/disruptor_ambient_glow.vpcf"
+				}
+			}
+		}
+		"527"
+		{
+			"name"		"Gyrocopter's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_gyrocopter"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_gyrocopter"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_gyrocopter/gyro_ambient.vpcf"
+				}
+			}
+		}
+		"528"
+		{
+			"name"		"Keeper of the Light's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_keeper_of_the_light"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_keeper_of_the_light"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_ambient.vpcf"
+				}
+			}
+		}
+		"531"
+		{
+			"name"		"Medusa's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_medusa"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_medusa"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_medusa/medusa_bow.vpcf"
+				}
+			}
+		}
+		"534"
+		{
+			"name"		"Ogre Magi's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_ogre_magi"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_ogre_magi"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_ogre_magi/ogre_magi_weapon.vpcf"
+				}
+			}
+		}
+		"537"
+		{
+			"name"		"Timbersaw's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_shredder"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_shredder"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_shredder/shredder_ambient.vpcf"
+				}
+			}
+		}
+		"538"
+		{
+			"name"		"Slark's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_slark"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_slark"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_slark/slark_ambient.vpcf"
+				}
+			}
+		}
+		"540"
+		{
+			"name"		"Terrorblade's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_terrorblade"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_terrorblade"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_feet_effects.vpcf"
+				}
+			}
+		}
+		"541"
+		{
+			"name"		"Tusk's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2014-09-08"
+			"item_slot"		"ambient_effects"
+			"particle_folder"		"particles/units/heroes/hero_tusk"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_tusk"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_tusk/tusk_ambient.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_tusk/tusk_ambient_mouth.vpcf"
+				}
+			}
+		}
+		"558"
+		{
+			"name"		"Witch Doctor's Death Ward"
+			"prefab"		"default_item"
+			"creation_date"		"2015-10-05"
+			"item_slot"		"summon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_witch_doctor"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"entity_model"
+					"asset"		"npc_dota_witch_doctor_death_ward"
+					"modifier"		"models/heroes/witchdoctor/witchdoctor_ward.vmdl"
+				}
+			}
+		}
+		"559"
+		{
+			"name"		"Enigma Bracers"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-13"
+			"item_slot"		"arms"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_enigma"		"1"
+			}
+		}
+		"560"
+		{
+			"name"		"Juggernaut's Healing Ward"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"entity_model"
+					"asset"		"npc_dota_juggernaut_healing_ward"
+					"modifier"		"models/heroes/juggernaut/jugg_healing_ward.vmdl"
+				}
+			}
+		}
+		"564"
+		{
+			"name"		"Bounty Hunter's Arms"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"arms"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_bounty_hunter"		"1"
+			}
+		}
+		"571"
+		{
+			"name"		"Lich's Head"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"head"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lich"		"1"
+			}
+		}
+		"573"
+		{
+			"name"		"Morphling's Head"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"head"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+		}
+		"574"
+		{
+			"name"		"Morphling's Shoulders"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"shoulder"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+		}
+		"575"
+		{
+			"name"		"Morphling's Back"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"back"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+		}
+		"576"
+		{
+			"name"		"Morphling's Arms"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"arms"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+		}
+		"577"
+		{
+			"name"		"Morphling's Miscellaneous"
+			"prefab"		"default_item"
+			"creation_date"		"2015-05-20"
+			"item_slot"		"misc"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_morphling"		"1"
+			}
+		}
+		"601"
+		{
+			"name"		"Arc Warden's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2015-10-06"
+			"item_slot"		"ambient_effects"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_arc_warden"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_arc_warden/arc_warden_ambient.vpcf"
+				}
+			}
+		}
+		"603"
+		{
+			"name"		"Templar Assassin's Weapon"
+			"prefab"		"default_item"
+			"creation_date"		"2015-10-21"
+			"particle_folder"		"particles/econ/items/templar_assassin/templar_assassin_focal"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_templar_assassin"		"1"
+			}
+		}
+		"610"
+		{
+			"name"		"Juggernaut's Default Voice"
+			"prefab"		"default_item"
+			"creation_date"		"2017-03-20"
+			"item_slot"		"voice"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_juggernaut"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"announcer_preview"
+					"asset"		"sounds/vo/juggernaut/jug_spawn_05.vsnd"
+					"modifier"		"#DOTA_Announcer_Preview_Juggernaut_Voice_Default_01"
+				}
+				"asset_modifier1"
+				{
+					"type"		"announcer_preview"
+					"asset"		"sounds/vo/juggernaut/jug_move_19.vsnd"
+					"modifier"		"#DOTA_Announcer_Preview_Juggernaut_Voice_Default_02"
+				}
+				"asset_modifier2"
+				{
+					"type"		"announcer_preview"
+					"asset"		"sounds/vo/juggernaut/jug_lasthit_05.vsnd"
+					"modifier"		"#DOTA_Announcer_Preview_Juggernaut_Voice_Default_03"
+				}
+				"asset_modifier3"
+				{
+					"type"		"announcer_preview"
+					"asset"		"sounds/vo/juggernaut/jug_level_04.vsnd"
+					"modifier"		"#DOTA_Announcer_Preview_Juggernaut_Voice_Default_04"
+				}
+			}
+		}
+		"611"
+		{
+			"name"		"Viper's Wings"
+			"prefab"		"default_item"
+			"creation_date"		"2016-10-20"
+			"item_slot"		"back"
+			"model_player"		"models/heroes/viper/viper_back.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_viper"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"623"
+		{
+			"name"		"Viper's Head"
+			"prefab"		"default_item"
+			"creation_date"		"2016-10-20"
+			"item_slot"		"head"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_viper"		"1"
+			}
+		}
+		"628"
+		{
+			"name"		"Enigma's Head Item"
+			"prefab"		"default_item"
+			"creation_date"		"2016-12-02"
+			"item_slot"		"head"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_enigma"		"1"
+			}
+		}
+		"629"
+		{
+			"name"		"Enigma's Armor"
+			"prefab"		"default_item"
+			"creation_date"		"2016-12-02"
+			"item_slot"		"armor"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_enigma"		"1"
+			}
+		}
+		"654"
+		{
+			"name"		"Viper's Tail"
+			"prefab"		"default_item"
+			"creation_date"		"2018-01-08"
+			"item_slot"		"tail"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_viper"		"1"
+			}
+		}
+		"659"
+		{
+			"name"		"Necrophos' Skirt"
+			"prefab"		"default_item"
+			"creation_date"		"2018-04-06"
+			"item_slot"		"legs"
+			"model_player"		"models/heroes/necrolyte/legs.vmdl"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_necrolyte"		"1"
+			}
+			"visuals"
+			{
+				"skip_model_combine"		"0"
+			}
+		}
+		"8362"
+		{
+			"name"		"Warlock Golem's Ambient Effects"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-22"
+			"item_slot"		"ambient_effects"
+			"used_by_heroes"
+			{
+				"npc_dota_warlock_golem"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_warlock/golem_ambient.vpcf"
+					"destroy_immediately"		"false"
+				}
+			}
+		}
+		"8364"
+		{
+			"name"		"Nature's Prophet Treant"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability3"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_furion"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_furion/natures_prophet_treant_ambient.vpcf"
+					"style"		"0"
+				}
+			}
+		}
+		"8367"
+		{
+			"name"		"Witch Doctor's Bare Back"
+			"prefab"		"default_item"
+			"item_slot"		"back"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_witch_doctor"		"1"
+			}
+		}
+		"8368"
+		{
+			"name"		"Lone Druid's Spirit Bear"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"summon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lone_druid"		"1"
+			}
+		}
+		"8369"
+		{
+			"name"		"Lycan's Wolves"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"summon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lycan"		"1"
+			}
+		}
+		"8370"
+		{
+			"name"		"Shadow Shaman's Serpent Wards"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"summon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_shadow_shaman"		"1"
+			}
+		}
+		"8633"
+		{
+			"name"		"Beastmaster's Boar"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"summon"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"8634"
+		{
+			"name"		"Beastmaster's Hawk"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_beastmaster"		"1"
+			}
+		}
+		"8635"
+		{
+			"name"		"Clockwerk's Power Cogs"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_rattletrap"		"1"
+			}
+		}
+		"8637"
+		{
+			"name"		"Enigma's Eidolons"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability2"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_enigma"		"1"
+			}
+		}
+		"8647"
+		{
+			"name"		"Dragon Knight's Elder Dragon"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"shapeshift"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_dragon_knight"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"hero_model_change"
+					"asset"		"models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
+					"modifier"		"models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
+				}
+			}
+		}
+		"8648"
+		{
+			"name"		"Lone Druid's True Form"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability_ultimate"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lone_druid"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"hero_model_change"
+					"asset"		"models/heroes/lone_druid/true_form.vmdl"
+					"modifier"		"models/heroes/lone_druid/true_form.vmdl"
+				}
+			}
+		}
+		"8649"
+		{
+			"name"		"Lycan's Shapeshift"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability4"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_lycan"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"hero_model_change"
+					"asset"		"models/heroes/lycan/lycan_wolf.vmdl"
+					"modifier"		"models/heroes/lycan/lycan_wolf.vmdl"
+				}
+			}
+		}
+		"8650"
+		{
+			"name"		"Terrorblade's Demon Form"
+			"prefab"		"default_item"
+			"creation_date"		"2015-04-14"
+			"item_slot"		"ability3"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_terrorblade"		"1"
+			}
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"hero_model_change"
+					"asset"		"models/heroes/terrorblade/demon.vmdl"
+					"modifier"		"models/heroes/terrorblade/demon.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis.vpcf"
+					"spawn_in_loadout_only"		"1"
+					"spawn_in_alternate_loadout_only"		"1"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_head.vpcf"
+					"spawn_in_loadout_only"		"1"
+					"spawn_in_alternate_loadout_only"		"1"
+				}
+			}
+		}
+		"8653"
+		{
+			"name"		"Axe's Miscellaneous"
+			"prefab"		"default_item"
+			"item_slot"		"misc"
+			"used_by_heroes"
+			{
+				"npc_dota_hero_axe"		"1"
+			}
+		}
+		"10010"
+		{
+			"name"		"S0 Flag Image 1"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagImage1"
+			"item_description"		"#DAC_Item_S0FlagImage1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilDefault"
+			"image_inventory"		"battle_pass/bp0/items/flag_image_01"
+		}
+		"10020"
+		{
+			"name"		"S0 Flag Shape 1"
+			"prefab"		"player_flag_shape"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagShape1"
+			"item_description"		"#DAC_Item_S0FlagShape1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagShape1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_01"
+		}
+		"10021"
+		{
+			"name"		"S0 Flag Shape 2"
+			"prefab"		"player_flag_shape"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagShape2"
+			"item_description"		"#DAC_Item_S0FlagShape2_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagShape2"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_02"
+		}
+		"10022"
+		{
+			"name"		"S0 Flag Shape 3"
+			"prefab"		"player_flag_shape"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagShape3"
+			"item_description"		"#DAC_Item_S0FlagShape3_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagShape3"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_03"
+		}
+		"10023"
+		{
+			"name"		"S0 Flag Shape 4"
+			"prefab"		"player_flag_shape"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagShape4"
+			"item_description"		"#DAC_Item_S0FlagShape4_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagShape4"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_04"
+		}
+		"10024"
+		{
+			"name"		"S0 Flag Shape 5"
+			"prefab"		"player_flag_shape"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagShape5"
+			"item_description"		"#DAC_Item_S0FlagShape5_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagShape5"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_05"
+		}
+		"10025"
+		{
+			"name"		"S0 Flag Shape 6"
+			"prefab"		"player_flag_shape"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0FlagShape6"
+			"item_description"		"#DAC_Item_S0FlagShape6_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagShape6"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_06"
+		}
+		"10030"
+		{
+			"name"		"S0 Profile Ring 1"
+			"prefab"		"player_profile_ring"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0ProfileRing1"
+			"item_description"		"#DAC_Item_S0ProfileRing1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0ProfileRing1"
+			"image_inventory"		"battle_pass/bp0/items/profile_ring_01"
+		}
+		"10031"
+		{
+			"name"		"S0 Profile Ring 2"
+			"prefab"		"player_profile_ring"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0ProfileRing2"
+			"item_description"		"#DAC_Item_S0ProfileRing2_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/profile_ring_02"
+			"panorama_class"		"S0ProfileRing2"
+		}
+		"10032"
+		{
+			"name"		"S0 Profile Ring 3"
+			"prefab"		"player_profile_ring"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0ProfileRing3"
+			"item_description"		"#DAC_Item_S0ProfileRing3_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/profile_ring_03"
+			"panorama_class"		"S0ProfileRing3"
+		}
+		"10033"
+		{
+			"name"		"S0 Profile Ring 4"
+			"prefab"		"player_profile_ring"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0ProfileRing4"
+			"item_description"		"#DAC_Item_S0ProfileRing4_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/profile_ring_04"
+			"panorama_class"		"S0ProfileRing4"
+		}
+		"10040"
+		{
+			"name"		"S0 Yo 1"
+			"prefab"		"player_yo"
+			"creation_date"		"2019-07-04"
+			"item_name"		"#DAC_Item_S0Yo1"
+			"item_description"		"#DAC_Item_S0Yo1_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/yo_01"
+			"panorama_class"		"yo1"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"sound"
+					"asset"		"DAC_UI.SocialYo"
+					"modifier"		"DAC_UI.SocialOi"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/fluff/yo/fluff_yo.vpcf"
+					"modifier"		"econ/s0/particles/fluff/s0_fluff_oy.vpcf"
+				}
+			}
+		}
+		"10041"
+		{
+			"name"		"S0 Yo 2"
+			"prefab"		"player_yo"
+			"creation_date"		"2019-07-04"
+			"item_name"		"#DAC_Item_S0Yo2"
+			"item_description"		"#DAC_Item_S0Yo2_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/yo_02"
+			"panorama_class"		"yo2"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"sound"
+					"asset"		"DAC_UI.SocialYo"
+					"modifier"		"DAC_UI.SocialHot"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/fluff/yo/fluff_yo.vpcf"
+					"modifier"		"econ/s0/particles/fluff/s0_fluff_pepper.vpcf"
+				}
+			}
+		}
+		"10042"
+		{
+			"name"		"S0 Yo 3"
+			"prefab"		"player_yo"
+			"creation_date"		"2019-07-04"
+			"item_name"		"#DAC_Item_S0Yo3"
+			"item_description"		"#DAC_Item_S0Yo3_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/yo_03"
+			"panorama_class"		"yo3"
+		}
+		"10043"
+		{
+			"name"		"S0 Yo 4"
+			"prefab"		"player_yo"
+			"creation_date"		"2019-07-04"
+			"item_name"		"#DAC_Item_S0Yo4"
+			"item_description"		"#DAC_Item_S0Yo4_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/yo_04"
+			"panorama_class"		"yo4"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"sound"
+					"asset"		"DAC_UI.SocialYo"
+					"modifier"		"DAC_UI.SocialOw"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/fluff/yo/fluff_yo.vpcf"
+					"modifier"		"econ/s0/particles/fluff/s0_fluff_ow.vpcf"
+				}
+			}
+		}
+		"10090"
+		{
+			"name"		"S0 Map 1"
+			"prefab"		"map"
+			"creation_date"		"2019-07-04"
+			"item_name"		"#DAC_Item_Map1"
+			"item_description"		"#DAC_Item_Map1_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/map_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"map_override"
+					"asset"		"dac"
+					"modifier"		"dac_forest"
+				}
+				"asset_modifier1"
+				{
+					"type"		"sound"
+					"asset"		"DAC_Soundscape.Arena"
+					"modifier"		"DAC_Soundscape.Arena_Forest"
+				}
+			}
+		}
+		"10091"
+		{
+			"name"		"S0 Map 0"
+			"prefab"		"map"
+			"creation_date"		"2019-07-12"
+			"item_name"		"#DAC_Item_Map0"
+			"item_description"		"#DAC_Item_Map0_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/map_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"map_override"
+					"asset"		"dac"
+					"modifier"		"dac"
+				}
+			}
+		}
+		"10100"
+		{
+			"name"		"S0 Flag Base 1"
+			"prefab"		"player_flag_base"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0Flag1"
+			"item_description"		"#DAC_Item_S0Flag1_desc"
+			"event_id"		"1"
+			"model_player"		"econ/models/banners/banner_s0.vmdl"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"model"
+					"asset"		"models/props_teams/banner_radiant.vmdl"
+					"modifier"		"econ/models/banners/banner_s0.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"model"
+					"asset"		"meshgroup"
+					"modifier"		"banner_s0_lvl0"
+				}
+			}
+		}
+		"10101"
+		{
+			"name"		"S0 Flag Base 2"
+			"prefab"		"player_flag_base"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0Flag2"
+			"item_description"		"#DAC_Item_S0Flag2_desc"
+			"event_id"		"1"
+			"model_player"		"econ/models/banners/banner_s0.vmdl"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_02"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"model"
+					"asset"		"models/props_teams/banner_radiant.vmdl"
+					"modifier"		"econ/models/banners/banner_s0.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"model"
+					"asset"		"meshgroup"
+					"modifier"		"banner_s0_lvl1"
+				}
+			}
+		}
+		"10102"
+		{
+			"name"		"S0 Flag Base 3"
+			"prefab"		"player_flag_base"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0Flag3"
+			"item_description"		"#DAC_Item_S0Flag3_desc"
+			"event_id"		"1"
+			"model_player"		"econ/models/banners/banner_s0.vmdl"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_03"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"model"
+					"asset"		"models/props_teams/banner_radiant.vmdl"
+					"modifier"		"econ/models/banners/banner_s0.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"model"
+					"asset"		"meshgroup"
+					"modifier"		"banner_s0_lvl2"
+				}
+			}
+		}
+		"10103"
+		{
+			"name"		"S0 Flag Base 4"
+			"prefab"		"player_flag_base"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0Flag4"
+			"item_description"		"#DAC_Item_S0Flag4_desc"
+			"event_id"		"1"
+			"model_player"		"econ/models/banners/banner_s0.vmdl"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_04"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"model"
+					"asset"		"models/props_teams/banner_radiant.vmdl"
+					"modifier"		"econ/models/banners/banner_s0.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"model"
+					"asset"		"meshgroup"
+					"modifier"		"banner_s0_lvl3"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"econ/particles/fluff/banners/s0/fluff_banners_s0.vpcf"
+				}
+			}
+		}
+		"10104"
+		{
+			"name"		"S0 Flag Base 5"
+			"prefab"		"player_flag_base"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0Flag5"
+			"item_description"		"#DAC_Item_S0Flag5_desc"
+			"event_id"		"1"
+			"model_player"		"econ/models/banners/banner_s0.vmdl"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_05"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"model"
+					"asset"		"models/props_teams/banner_radiant.vmdl"
+					"modifier"		"econ/models/banners/banner_s0.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"model"
+					"asset"		"meshgroup"
+					"modifier"		"banner_s0_lvl3"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"econ/particles/fluff/banners/s0/fluff_banners_s0_green.vpcf"
+				}
+			}
+		}
+		"10105"
+		{
+			"name"		"S0 Flag Base 6"
+			"prefab"		"player_flag_base"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0Flag6"
+			"item_description"		"#DAC_Item_S0Flag6_desc"
+			"event_id"		"1"
+			"model_player"		"econ/models/banners/banner_s0.vmdl"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_06"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"model"
+					"asset"		"models/props_teams/banner_radiant.vmdl"
+					"modifier"		"econ/models/banners/banner_s0.vmdl"
+				}
+				"asset_modifier1"
+				{
+					"type"		"model"
+					"asset"		"meshgroup"
+					"modifier"		"banner_s0_lvl3"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle_create"
+					"modifier"		"econ/particles/fluff/banners/s0/fluff_banners_s0_blue.vpcf"
+				}
+			}
+		}
+		"10200"
+		{
+			"name"		"S0 Teleport Effect 1"
+			"prefab"		"teleport"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0Teleport1"
+			"item_description"		"#DAC_Item_S0Teleport1_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/teleport_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/items2_fx/teleport_end.vpcf"
+					"modifier"		"econ/s0/particles/teleport/druidic/teleport_druidic.vpcf"
+				}
+			}
+		}
+		"10201"
+		{
+			"name"		"S0 Teleport Effect 2"
+			"prefab"		"teleport"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0Teleport2"
+			"item_description"		"#DAC_Item_S0Teleport2_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/teleport_02"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/items2_fx/teleport_end.vpcf"
+					"modifier"		"econ/s0/particles/teleport/barrel/teleport_barrel.vpcf"
+				}
+			}
+		}
+		"10203"
+		{
+			"name"		"S0 Teleport Effect 3"
+			"prefab"		"teleport"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0Teleport3"
+			"item_description"		"#DAC_Item_S0Teleport3_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/teleport_03"
+		}
+		"10300"
+		{
+			"name"		"S0 Fireworks Effect 1"
+			"prefab"		"fireworks"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0Fireworks1"
+			"item_description"		"#DAC_Item_S0Fireworks1_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/fireworks_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
+					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
+				}
+			}
+		}
+		"10301"
+		{
+			"name"		"S0 Fireworks Effect 2"
+			"prefab"		"fireworks"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0Fireworks2"
+			"item_description"		"#DAC_Item_S0Fireworks2_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/fireworks_02"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
+					"modifier"		"econ/s0/particles/ui/end_of_round/victory/spotlights/eor_victory_hero_spotlights.vpcf"
+				}
+			}
+		}
+		"10303"
+		{
+			"name"		"S0 Fireworks Effect 3"
+			"prefab"		"fireworks"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0Fireworks3"
+			"item_description"		"#DAC_Item_S0Fireworks3_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/fireworks_03"
+		}
+		"10400"
+		{
+			"name"		"S0 Kill Steak Effect 1"
+			"prefab"		"kill_streak"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0KillStreak1"
+			"item_description"		"#DAC_Item_S0KillStreak1_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/killstreak_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_1_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_fire_1_bkg.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_2_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_fire_2_bkg.vpcf"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_3_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_fire_3_bkg.vpcf"
+				}
+				"asset_modifier3"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_complete_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_fire_complete_bkg.vpcf"
+				}
+			}
+		}
+		"10401"
+		{
+			"name"		"S0 Kill Steak Effect 2"
+			"prefab"		"kill_streak"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0KillStreak2"
+			"item_description"		"#DAC_Item_S0KillStreak2_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/killstreak_02"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_1_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_arcade_1_bkg.vpcf"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_2_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_arcade_2_bkg.vpcf"
+				}
+				"asset_modifier2"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_3_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_arcade_3_bkg.vpcf"
+				}
+				"asset_modifier3"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_complete_bkg.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_arcade_complete_bkg.vpcf"
+				}
+				"asset_modifier4"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_2.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_arcade_2.vpcf"
+				}
+				"asset_modifier5"
+				{
+					"type"		"particle"
+					"asset"		"particles/ui/streaks/ui_win_leaderboard_3.vpcf"
+					"modifier"		"econ/s0/particles/ui/streaks/s0_ui_win_leaderboard_arcade_3.vpcf"
+				}
+			}
+		}
+		"10403"
+		{
+			"name"		"S0 Kill Steak Effect 3"
+			"prefab"		"kill_streak"
+			"creation_date"		"2019-06-26"
+			"item_name"		"#DAC_Item_S0KillStreak3"
+			"item_description"		"#DAC_Item_S0KillStreak3_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/killstreak_03"
+		}
+		"10500"
+		{
+			"name"		"S0 Flag Sigil Alliance 1"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilAlliance1"
+			"item_description"		"#DAC_Item_S0FlagSigilAlliance1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilAlliance1"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Alliance_01"
+		}
+		"10501"
+		{
+			"name"		"S0 Flag Sigil Alliance 2"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilAlliance2"
+			"item_description"		"#DAC_Item_S0FlagSigilAlliance2_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilAlliance2"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Alliance_02"
+		}
+		"10502"
+		{
+			"name"		"S0 Flag Sigil Alliance 3"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilAlliance3"
+			"item_description"		"#DAC_Item_S0FlagSigilAlliance3_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilAlliance3"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Alliance_03"
+		}
+		"10503"
+		{
+			"name"		"S0 Flag Sigil Econ 1"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilEcon1"
+			"item_description"		"#DAC_Item_S0FlagSigilEcon1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilEcon1"
+			"image_inventory"		"battle_pass/bp0/items/sigil_econ_01"
+		}
+		"10504"
+		{
+			"name"		"S0 Flag Sigil Econ 2"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilEcon2"
+			"item_description"		"#DAC_Item_S0FlagSigilEcon2_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilEcon2"
+			"image_inventory"		"battle_pass/bp0/items/sigil_econ_02"
+		}
+		"10505"
+		{
+			"name"		"S0 Flag Sigil Econ 3"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilEcon3"
+			"item_description"		"#DAC_Item_S0FlagSigilEcon3_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilEcon3"
+			"image_inventory"		"battle_pass/bp0/items/sigil_econ_03"
+		}
+		"10506"
+		{
+			"name"		"S0 Flag Sigil Heroes 1"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilHeroes1"
+			"item_description"		"#DAC_Item_S0FlagSigilHeroes1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilHeroes1"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Heroes_01"
+		}
+		"10507"
+		{
+			"name"		"S0 Flag Sigil Heroes 2"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilHeroes2"
+			"item_description"		"#DAC_Item_S0FlagSigilHeroes2_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilHeroes2"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Heroes_02"
+		}
+		"10508"
+		{
+			"name"		"S0 Flag Sigil Heroes 3"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilHeroes3"
+			"item_description"		"#DAC_Item_S0FlagSigilHeroes3_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilHeroes3"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Heroes_03"
+		}
+		"10509"
+		{
+			"name"		"S0 Flag Sigil Win 1"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilWin1"
+			"item_description"		"#DAC_Item_S0FlagSigilWin1_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilWin1"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Win_01"
+		}
+		"10510"
+		{
+			"name"		"S0 Flag Sigil Win 2"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilWin2"
+			"item_description"		"#DAC_Item_S0FlagSigilWin2_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilWin2"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Win_02"
+		}
+		"10511"
+		{
+			"name"		"S0 Flag Sigil Win 3"
+			"prefab"		"player_flag_image"
+			"creation_date"		"2019-07-23"
+			"item_name"		"#DAC_Item_S0FlagSigilWin3"
+			"item_description"		"#DAC_Item_S0FlagSigilWin3_desc"
+			"event_id"		"1"
+			"panorama_class"		"S0FlagSigilWin3"
+			"image_inventory"		"battle_pass/bp0/items/sigil_Win_03"
+		}
+		"100000"
+		{
+			"name"		"Placeholder Talent 1"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_passive"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_base_05"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_1"
+				}
+			}
+		}
+		"100001"
+		{
+			"name"		"Placeholder Talent 2"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier1"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent2"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent2_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_2"
+				}
+			}
+		}
+		"100002"
+		{
+			"name"		"Placeholder Talent 3"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier1"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent3"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent3_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_1"
+				}
+			}
+		}
+		"100003"
+		{
+			"name"		"Placeholder Talent 4"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier2"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent4"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent4_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_02"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_2"
+				}
+			}
+		}
+		"100004"
+		{
+			"name"		"Placeholder Talent 5"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier2"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent5"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent5_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_03"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_1"
+				}
+			}
+		}
+		"100005"
+		{
+			"name"		"Placeholder Talent 6"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier3"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent6"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent6_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_04"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_2"
+				}
+			}
+		}
+		"100006"
+		{
+			"name"		"Placeholder Talent 7"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier3"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent7"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent7_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_05"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_1"
+				}
+			}
+		}
+		"100007"
+		{
+			"name"		"Placeholder Talent 8"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier4"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent8"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent8_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_06"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_2"
+				}
+			}
+		}
+		"100008"
+		{
+			"name"		"Placeholder Talent 9"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier4"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent9"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent9_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_01"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_2"
+				}
+			}
+		}
+		"100009"
+		{
+			"name"		"Placeholder Talent 10"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier1"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent10"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent10_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_10"
+				}
+			}
+		}
+		"100010"
+		{
+			"name"		"Placeholder Talent 11"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier1"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent11"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent11_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_11"
+				}
+			}
+		}
+		"100011"
+		{
+			"name"		"Placeholder Talent 12"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier2"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent12"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent12_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_12"
+				}
+			}
+		}
+		"100012"
+		{
+			"name"		"Placeholder Talent 13"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier3"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent13"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent13_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_13"
+				}
+			}
+		}
+		"100013"
+		{
+			"name"		"Placeholder Talent 14"
+			"prefab"		"underlord_talent"
+			"global_loadout_slot"		"talent_tier4"
+			"creation_date"		"2019-07-01"
+			"item_name"		"#DAC_Item_S0PlaceholderTalent14"
+			"item_description"		"#DAC_Item_S0PlaceholderTalent14_desc"
+			"event_id"		"1"
+			"image_inventory"		"battle_pass/bp0/items/flag_shape_00"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"buff_modifier"
+					"modifier"		"placeholder_buff_14"
+				}
+			}
+		}
+	}
+	"attributes"
+	{
+		"16"
+		{
+			"name"		"is commodity"
+			"attribute_class"		"is commodity"
+			"attribute_type"		"uint32"
+			"hidden"		"1"
+			"storage_type"		"static"
+		}
+		"17"
+		{
+			"name"		"not marketable"
+			"attribute_class"		"not marketable"
+			"attribute_type"		"uint32"
+			"hidden"		"0"
+			"description_string"		"#Attrib_NotMarketable"
+			"description_format"		"value_is_additive"
+			"storage_type"		"static"
+		}
+		"153"
+		{
+			"name"		"cannot trade"
+			"attribute_class"		"cannot_trade"
+			"description_string"		"#Attrib_CannotTrade"
+			"description_format"		"value_is_additive"
+			"hidden"		"1"
+			"effect_type"		"neutral"
+			"stored_as_integer"		"0"
+			"storage_type"		"both"
+		}
+		"188"
+		{
+			"name"		"treasure loot list"
+			"attribute_class"		"treasure loot list"
+			"attribute_type"		"string"
+			"hidden"		"1"
+			"storage_type"		"static"
+		}
+		"211"
+		{
+			"name"		"tradable after date"
+			"attribute_class"		"tradable_after_date"
+			"description_string"		"#Attrib_TradableAfterDate"
+			"description_format"		"value_is_date"
+			"hidden"		"1"
+			"effect_type"		"negative"
+			"attribute_type"		"uint32"
+			"storage_type"		"both"
+		}
+		"427"
+		{
+			"name"		"trade cooldown until date"
+			"attribute_class"		"trade_cooldown_until_date"
+			"description_string"		"#Attrib_TradeCooldownUntilDate"
+			"description_format"		"value_is_date"
+			"hidden"		"1"
+			"effect_type"		"negative"
+			"attribute_type"		"uint32"
+			"storage_type"		"dynamic"
+		}
+	}
+	"loot_lists"
+	{
+	}
+}

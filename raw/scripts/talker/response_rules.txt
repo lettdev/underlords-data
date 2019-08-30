@@ -1,0 +1,236 @@
+// Base script
+enumeration "NPCState"
+{
+	"None"		"0"
+	"Idle"		"1"
+	"Alert"		"2"
+	"Combat"	"3"
+	"Scripted"	"4"
+	"PlayDead"	"5"
+	"Dead"		"6"
+}
+
+response "NullResponse"
+
+// High-level concepts
+criterion "ConceptRecruit" "Concept" "TLK_DAC_RECRUIT" required
+criterion "ConceptRoundEnd" "Concept" "TLK_DAC_ROUNDEND" required
+criterion "ConceptRoundStart" "Concept" "TLK_DAC_ROUNDSTART" required
+criterion "ConceptPutMeIn" "Concept" "TLK_DAC_PUTMEIN" required
+
+// Unit Rank
+criterion "UnitRank1" "unitRank" "1" required
+criterion "UnitRank2" "unitRank" "2" required
+criterion "UnitRank3" "unitRank" "3" required
+
+// Misc flags
+criterion "NoEnemyUnits" "noEnemyUnits" "1" required
+
+//win streak
+
+//lose streak
+
+criterion "LostLastGame" "loseStreak" ">0" required
+
+
+
+
+
+// Victory level
+criterion "Result_LoseDecisive" "winLevel" "Result_LoseDecisive" required
+criterion "Result_LoseNarrow" "winLevel" "Result_LoseNarrow" required
+criterion "Result_LoseFlawless" "winLevel" "Result_LoseFlawless" required
+criterion "Result_LoseNormal" "winLevel" "Result_LoseNormal" required
+criterion "Result_WinDecisive" "winLevel" "Result_WinDecisive" required
+criterion "Result_WinNarrow" "winLevel" "Result_WinNarrow" required
+criterion "Result_WinFlawless" "winLevel" "Result_WinFlawless" required
+criterion "Result_WinNormal" "winLevel" "Result_WinNormal" required
+criterion "Result_Draw" "winLevel" "Result_Draw" required
+
+// Friend unit presence
+criterion "HasFriendly_abaddon" "hasFriendly_abaddon" "1" required
+criterion "HasFriendly_alchemist" "hasFriendly_alchemist" "1" required
+criterion "HasFriendly_antimage" "hasFriendly_antimage" "1" required
+criterion "HasFriendly_axe" "hasFriendly_axe" "1" required
+criterion "HasFriendly_bat_rider" "hasFriendly_bat_rider" "1" required
+criterion "HasFriendly_beastmaster" "hasFriendly_beastmaster" "1" required
+criterion "HasFriendly_bounty_hunter" "hasFriendly_bounty_hunter" "1" required
+criterion "HasFriendly_chaos_knight" "hasFriendly_chaos_knight" "1" required
+criterion "HasFriendly_clockwerk" "hasFriendly_clockwerk" "1" required
+criterion "HasFriendly_crystal_maiden" "hasFriendly_crystal_maiden" "1" required
+criterion "HasFriendly_disruptor" "hasFriendly_disruptor" "1" required
+criterion "HasFriendly_doom" "hasFriendly_doom" "1" required
+criterion "HasFriendly_dragon_knight" "hasFriendly_dragon_knight" "1" required
+criterion "HasFriendly_drow_ranger" "hasFriendly_drow_ranger" "1" required
+criterion "HasFriendly_enchantress" "hasFriendly_enchantress" "1" required
+criterion "HasFriendly_enigma" "hasFriendly_enigma" "1" required
+criterion "HasFriendly_furion" "hasFriendly_furion" "1" required
+criterion "HasFriendly_gyrocopter" "hasFriendly_gyrocopter" "1" required
+criterion "HasFriendly_juggernaut" "hasFriendly_juggernaut" "1" required
+criterion "HasFriendly_keeper_of_the_light" "hasFriendly_keeper_of_the_light" "1" required
+criterion "HasFriendly_kunkka" "hasFriendly_kunkka" "1" required
+criterion "HasFriendly_lich" "hasFriendly_lich" "1" required
+criterion "HasFriendly_lina" "hasFriendly_lina" "1" required
+criterion "HasFriendly_lone_druid" "hasFriendly_lone_druid" "1" required
+criterion "HasFriendly_luna" "hasFriendly_luna" "1" required
+criterion "HasFriendly_lycan" "hasFriendly_lycan" "1" required
+criterion "HasFriendly_medusa" "hasFriendly_medusa" "1" required
+criterion "HasFriendly_morphling" "hasFriendly_morphling" "1" required
+criterion "HasFriendly_necrophos" "hasFriendly_necrophos" "1" required
+criterion "HasFriendly_ogre_magi" "hasFriendly_ogre_magi" "1" required
+criterion "HasFriendly_omniknight" "hasFriendly_omniknight" "1" required
+criterion "HasFriendly_phantom_assassin" "hasFriendly_phantom_assassin" "1" required
+criterion "HasFriendly_puck" "hasFriendly_puck" "1" required
+criterion "HasFriendly_queen_of_pain" "hasFriendly_queen_of_pain" "1" required
+criterion "HasFriendly_razor" "hasFriendly_razor" "1" required
+criterion "HasFriendly_sand_king" "hasFriendly_sand_king" "1" required
+criterion "HasFriendly_shadow_fiend" "hasFriendly_shadow_fiend" "1" required
+criterion "HasFriendly_shadow_shaman" "hasFriendly_shadow_shaman" "1" required
+criterion "HasFriendly_slardar" "hasFriendly_slardar" "1" required
+criterion "HasFriendly_slark" "hasFriendly_slark" "1" required
+criterion "HasFriendly_sniper" "hasFriendly_sniper" "1" required
+criterion "HasFriendly_techies" "hasFriendly_techies" "1" required
+criterion "HasFriendly_templar_assassin" "hasFriendly_templar_assassin" "1" required
+criterion "HasFriendly_terrorblade" "hasFriendly_terrorblade" "1" required
+criterion "HasFriendly_tidehunter" "hasFriendly_tidehunter" "1" required
+criterion "HasFriendly_timbersaw" "hasFriendly_timbersaw" "1" required
+criterion "HasFriendly_tinker" "hasFriendly_tinker" "1" required
+criterion "HasFriendly_tiny" "hasFriendly_tiny" "1" required
+criterion "HasFriendly_treant_protector" "hasFriendly_treant_protector" "1" required
+criterion "HasFriendly_troll_warlord" "hasFriendly_troll_warlord" "1" required
+criterion "HasFriendly_tusk" "hasFriendly_tusk" "1" required
+criterion "HasFriendly_venomancer" "hasFriendly_venomancer" "1" required
+criterion "HasFriendly_viper" "hasFriendly_viper" "1" required
+criterion "HasFriendly_wind_ranger" "hasFriendly_wind_ranger" "1" required
+criterion "HasFriendly_witch_doctor" "hasFriendly_witch_doctor" "1" required
+criterion "HasFriendly_pudge" "hasFriendly_pudge" "1" required
+criterion "HasFriendly_warlock" "hasFriendly_warlock" "1" required
+criterion "HasFriendly_bloodseeker" "hasFriendly_bloodseeker" "1" required
+criterion "HasFriendly_arc_warden" "hasFriendly_arc_warden" "1" required
+criterion "HasFriendly_mirana" "hasFriendly_mirana" "1" required
+
+// Enemy presence
+criterion "HasEnemy_abaddon" "hasEnemy_abaddon" "1" required
+criterion "HasEnemy_alchemist" "hasEnemy_alchemist" "1" required
+criterion "HasEnemy_antimage" "hasEnemy_antimage" "1" required
+criterion "HasEnemy_axe" "hasEnemy_axe" "1" required
+criterion "HasEnemy_bat_rider" "hasEnemy_bat_rider" "1" required
+criterion "HasEnemy_beastmaster" "hasEnemy_beastmaster" "1" required
+criterion "HasEnemy_bounty_hunter" "hasEnemy_bounty_hunter" "1" required
+criterion "HasEnemy_chaos_knight" "hasEnemy_chaos_knight" "1" required
+criterion "HasEnemy_clockwerk" "hasEnemy_clockwerk" "1" required
+criterion "HasEnemy_crystal_maiden" "hasEnemy_crystal_maiden" "1" required
+criterion "HasEnemy_disruptor" "hasEnemy_disruptor" "1" required
+criterion "HasEnemy_doom" "hasEnemy_doom" "1" required
+criterion "HasEnemy_dragon_knight" "hasEnemy_dragon_knight" "1" required
+criterion "HasEnemy_drow_ranger" "hasEnemy_drow_ranger" "1" required
+criterion "HasEnemy_enchantress" "hasEnemy_enchantress" "1" required
+criterion "HasEnemy_enigma" "hasEnemy_enigma" "1" required
+criterion "HasEnemy_furion" "hasEnemy_furion" "1" required
+criterion "HasEnemy_gyrocopter" "hasEnemy_gyrocopter" "1" required
+criterion "HasEnemy_juggernaut" "hasEnemy_juggernaut" "1" required
+criterion "HasEnemy_keeper_of_the_light" "hasEnemy_keeper_of_the_light" "1" required
+criterion "HasEnemy_kunkka" "hasEnemy_kunkka" "1" required
+criterion "HasEnemy_lich" "hasEnemy_lich" "1" required
+criterion "HasEnemy_lina" "hasEnemy_lina" "1" required
+criterion "HasEnemy_lone_druid" "hasEnemy_lone_druid" "1" required
+criterion "HasEnemy_luna" "hasEnemy_luna" "1" required
+criterion "HasEnemy_lycan" "hasEnemy_lycan" "1" required
+criterion "HasEnemy_medusa" "hasEnemy_medusa" "1" required
+criterion "HasEnemy_morphling" "hasEnemy_morphling" "1" required
+criterion "HasEnemy_necrophos" "hasEnemy_necrophos" "1" required
+criterion "HasEnemy_ogre_magi" "hasEnemy_ogre_magi" "1" required
+criterion "HasEnemy_omniknight" "hasEnemy_omniknight" "1" required
+criterion "HasEnemy_phantom_assassin" "hasEnemy_phantom_assassin" "1" required
+criterion "HasEnemy_puck" "hasEnemy_puck" "1" required
+criterion "HasEnemy_queen_of_pain" "hasEnemy_queen_of_pain" "1" required
+criterion "HasEnemy_razor" "hasEnemy_razor" "1" required
+criterion "HasEnemy_sand_king" "hasEnemy_sand_king" "1" required
+criterion "HasEnemy_shadow_fiend" "hasEnemy_shadow_fiend" "1" required
+criterion "HasEnemy_shadow_shaman" "hasEnemy_shadow_shaman" "1" required
+criterion "HasEnemy_slardar" "hasEnemy_slardar" "1" required
+criterion "HasEnemy_slark" "hasEnemy_slark" "1" required
+criterion "HasEnemy_sniper" "hasEnemy_sniper" "1" required
+criterion "HasEnemy_techies" "hasEnemy_techies" "1" required
+criterion "HasEnemy_templar_assassin" "hasEnemy_templar_assassin" "1" required
+criterion "HasEnemy_terrorblade" "hasEnemy_terrorblade" "1" required
+criterion "HasEnemy_tidehunter" "hasEnemy_tidehunter" "1" required
+criterion "HasEnemy_timbersaw" "hasEnemy_timbersaw" "1" required
+criterion "HasEnemy_tinker" "hasEnemy_tinker" "1" required
+criterion "HasEnemy_tiny" "hasEnemy_tiny" "1" required
+criterion "HasEnemy_treant_protector" "hasEnemy_treant_protector" "1" required
+criterion "HasEnemy_troll_warlord" "hasEnemy_troll_warlord" "1" required
+criterion "HasEnemy_tusk" "hasEnemy_tusk" "1" required
+criterion "HasEnemy_venomancer" "hasEnemy_venomancer" "1" required
+criterion "HasEnemy_viper" "hasEnemy_viper" "1" required
+criterion "HasEnemy_wind_ranger" "hasEnemy_wind_ranger" "1" required
+criterion "HasEnemy_witch_doctor" "hasEnemy_witch_doctor" "1" required
+criterion "HasEnemy_pudge" "hasEnemy_pudge" "1" required
+criterion "HasEnemy_warlock" "hasEnemy_warlock" "1" required
+criterion "HasEnemy_bloodseeker" "hasEnemy_bloodseeker" "1" required
+criterion "HasEnemy_arc_warden" "hasEnemy_arc_warden" "1" required
+criterion "HasEnemy_mirana" "hasEnemy_mirana" "1" required
+
+// Synergies
+criterion "HasFriendlySynergy_Beast" "hasFriendlySynergy_Beast" ">0" required
+criterion "HasFriendlySynergy_Demon" "hasFriendlySynergy_Demon" ">0" required
+criterion "HasFriendlySynergy_Dragon" "hasFriendlySynergy_Dragon" ">0" required
+criterion "HasFriendlySynergy_Dwarf" "hasFriendlySynergy_Dwarf" ">0" required
+criterion "HasFriendlySynergy_Element" "hasFriendlySynergy_Element" ">0" required
+criterion "HasFriendlySynergy_Elf" "hasFriendlySynergy_Elf" ">0" required
+criterion "HasFriendlySynergy_Goblin" "hasFriendlySynergy_Goblin" ">0" required
+criterion "HasFriendlySynergy_Human" "hasFriendlySynergy_Human" ">0" required
+criterion "HasFriendlySynergy_Naga" "hasFriendlySynergy_Naga" ">0" required
+criterion "HasFriendlySynergy_Ogre" "hasFriendlySynergy_Ogre" ">0" required
+criterion "HasFriendlySynergy_Orc" "hasFriendlySynergy_Orc" ">0" required
+criterion "HasFriendlySynergy_Troll" "hasFriendlySynergy_Troll" ">0" required
+criterion "HasFriendlySynergy_Undead" "hasFriendlySynergy_Undead" ">0" required
+criterion "HasFriendlySynergy_Satyr" "hasFriendlySynergy_Satyr" ">0" required
+criterion "HasFriendlySynergy_Assassin" "hasFriendlySynergy_Assassin" ">0" required
+criterion "HasFriendlySynergy_DemonHunter" "hasFriendlySynergy_DemonHunter" ">0" required
+criterion "HasFriendlySynergy_Druid" "hasFriendlySynergy_Druid" ">0" required
+criterion "HasFriendlySynergy_Hunter" "hasFriendlySynergy_Hunter" ">0" required
+criterion "HasFriendlySynergy_Knight" "hasFriendlySynergy_Knight" ">0" required
+criterion "HasFriendlySynergy_Mage" "hasFriendlySynergy_Mage" ">0" required
+criterion "HasFriendlySynergy_Mech" "hasFriendlySynergy_Mech" ">0" required
+criterion "HasFriendlySynergy_Shaman" "hasFriendlySynergy_Shaman" ">0" required
+criterion "HasFriendlySynergy_Warlock" "hasFriendlySynergy_Warlock" ">0" required
+criterion "HasFriendlySynergy_Warrior" "hasFriendlySynergy_Warrior" ">0" required
+
+criterion "HasEnemySynergy_Beast" "hasEnemySynergy_Beast" ">0" required
+criterion "HasEnemySynergy_Demon" "hasEnemySynergy_Demon" ">0" required
+criterion "HasEnemySynergy_Dragon" "hasEnemySynergy_Dragon" ">0" required
+criterion "HasEnemySynergy_Dwarf" "hasEnemySynergy_Dwarf" ">0" required
+criterion "HasEnemySynergy_Element" "hasEnemySynergy_Element" ">0" required
+criterion "HasEnemySynergy_Elf" "hasEnemySynergy_Elf" ">0" required
+criterion "HasEnemySynergy_Goblin" "hasEnemySynergy_Goblin" ">0" required
+criterion "HasEnemySynergy_Human" "hasEnemySynergy_Human" ">0" required
+criterion "HasEnemySynergy_Naga" "hasEnemySynergy_Naga" ">0" required
+criterion "HasEnemySynergy_Ogre" "hasEnemySynergy_Ogre" ">0" required
+criterion "HasEnemySynergy_Orc" "hasEnemySynergy_Orc" ">0" required
+criterion "HasEnemySynergy_Troll" "hasEnemySynergy_Troll" ">0" required
+criterion "HasEnemySynergy_Undead" "hasEnemySynergy_Undead" ">0" required
+criterion "HasEnemySynergy_Satyr" "hasEnemySynergy_Satyr" ">0" required
+criterion "HasEnemySynergy_Assassin" "hasEnemySynergy_Assassin" ">0" required
+criterion "HasEnemySynergy_DemonHunter" "hasEnemySynergy_DemonHunter" ">0" required
+criterion "HasEnemySynergy_Druid" "hasEnemySynergy_Druid" ">0" required
+criterion "HasEnemySynergy_Hunter" "hasEnemySynergy_Hunter" ">0" required
+criterion "HasEnemySynergy_Knight" "hasEnemySynergy_Knight" ">0" required
+criterion "HasEnemySynergy_Mage" "hasEnemySynergy_Mage" ">0" required
+criterion "HasEnemySynergy_Mech" "hasEnemySynergy_Mech" ">0" required
+criterion "HasEnemySynergy_Shaman" "hasEnemySynergy_Shaman" ">0" required
+criterion "HasEnemySynergy_Warlock" "hasEnemySynergy_Warlock" ">0" required
+criterion "HasEnemySynergy_Warrior" "hasEnemySynergy_Warrior" ">0" required
+
+
+#include "talker/units/drow_ranger.txt"
+#include "talker/units/wind_ranger.txt"
+#include "talker/units/enchantress.txt"
+#include "talker/units/phantom_assassin.txt"
+#include "talker/units/doom.txt"
+#include "talker/units/lina.txt"
+#include "talker/units/mirana.txt"
+#include "talker/units/shadowfiend.txt"
+#include "talker/units/luna.txt"
+#include "talker/units/queen_of_pain.txt"
+#include "talker/units/templar_assassin.txt"
