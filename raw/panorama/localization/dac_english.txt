@@ -1595,7 +1595,16 @@
 	"dac_settings_tap_move"						"Enable tap to move"
 	"dac_settings_auto_deploy_units"			"Auto deploy units from your bench if there is room."
 	"dac_settings_use_panorama_login"			"Use legacy Steam login"
-	"dac_settings_battery_saver"				"Enable Battery Saver"
+
+	"dac_settings_mobile"						"Mobile"
+	"dac_mobile_settings"						"Mobile Framerate Settings"
+	"dac_mobile_framerate"						"Mobile framerate limit"
+	"dac_settings_fps_15"						"15 FPS (Battery Saver)"
+	"dac_settings_fps_30"						"30 FPS"
+	"dac_settings_fps_60"						"60 FPS"
+
+	"dac_settings_mobile_fps_increase"			"Increase FPS cap during touch interactions."
+	"dac_settings_mobile_fps_increase_charging"		"Allow FPS increase while plugged in."
 
 	"dac_settings_build_version"				"Build Version: {d:client_version_number}"
 
@@ -2025,7 +2034,7 @@
 	"dac_legendary_title_disruptor"	"Ace of Warlocks"
 	
 
-	"dac_legendary_enigma_desc" "Extends the effects of the <span class='Shaman'>Shaman</span> <img class='InlineSynergyIcon SynergyShaman'/> Alliance to your entire army.<br><br>+15% chance of finding if you have at least one level of the <span class='Shaman'>Shaman</span> <img class='InlineSynergyIcon SynergyShaman'/> Alliance completed."
+	"dac_legendary_enigma_desc" "Enemies affected by Hexes, Silences or Stuns will generate -200% mana.<br><br>+15% chance of finding if you have at least one level of the <span class='Shaman'>Shaman</span> <img class='InlineSynergyIcon SynergyShaman'/> Alliance completed."
 	"dac_legendary_gyrocopter_desc" "Grants <span class='Dwarf'>Deadeye</span> <img class='InlineSynergyIcon SynergyDeadeye'/> units True Strike. Units with True Strike cannot miss.<br><br>+15% chance of finding if you have at least one level of the <span class='Dwarf'>Deadeye</span> <img class='InlineSynergyIcon SynergyDeadeye'/> Alliance completed."
 	"dac_legendary_lich_desc" "Your army's mana generation from attacks is increased 10% per <span class='Mages'>Mage</span> <img class='InlineSynergyIcon SynergyMages'/> Alliance level.<br><br>+15% chance of finding if you have at least one level of the <span class='Mages'>Mage</span> <img class='InlineSynergyIcon SynergyMages'/> Alliance completed."
 	"dac_legendary_medusa_desc" "Grants <span class='Naga'>Scaled</span> <img class='InlineSynergyIcon SynergyScaled'/> units Retaliate. When a unit with Retaliate is attacked, they apply a 25 dmg/sec per Alliance level debuff to their attacker.<br><br>+15% chance of finding if you have at least one level of the <span class='Naga'>Scaled</span> <img class='InlineSynergyIcon SynergyScaled'/> Alliance completed."

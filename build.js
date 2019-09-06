@@ -20,11 +20,15 @@ const Tasks = [
     dest: 'heroes.json',
     task: function() {
       const heroesFile = require(rawDir + this.raw);
-      // remove # sign before every heroes' displayName property
+      // remove # sign before every heroes' displayName + legendary property
       Object.entries(heroesFile).forEach(([key, hero]) => {
-        if (hero.displayName) {
-          hero.key = key;
+        hero.key = key;
+        if (hero.displayName) {          
           hero.displayName = hero.displayName.replace('#', '')
+        }
+        if (hero.legendary) {
+          hero.legendary.title = hero.legendary.title.replace('#', '')
+          hero.legendary.description = hero.legendary.description.replace('#', '')
         }
       });
       dataObj[this.key] = heroesFile;

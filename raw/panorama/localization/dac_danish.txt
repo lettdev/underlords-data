@@ -825,10 +825,10 @@
 	"dac_item_tombstone_lore"							"Endelig noget at bruge alle disse lig til. <i>&#8211; Zenok, hæler i Det Hvide Spir</i>"
 	"dac_name_tombstone_zombie"							"Zombie"
 
-	"dac_name_target_dummy"								"Høsæk"
-	"dac_item_target_dummy"								"Høsæk"
+	"dac_name_target_dummy"								"Fugleskræmsel"
+	"dac_item_target_dummy"								"Fugleskræmsel"
 	"dac_item_target_dummy_desc"						"Håner fjender og tiltrækker angreb. Kan udstyre genstande."
-	"dac_item_target_dummy_lore"						"Sørgeligt nok har jeg mødt dårligere modstandere end denne høsæk. <i>&#8211; Zenok, hæler i Det Hvide Spir</i>"
+	"dac_item_target_dummy_lore"						"Sørgeligt nok har jeg mødt dårligere modstandere end denne omgang hø. <i>&#8211; Zenok, hæler i Det Hvide Spir</i>"
 
 
 	"dac_bp1_bronze_border"								"Bronzekant"
@@ -1595,7 +1595,16 @@
 	"dac_settings_tap_move"						"Tryk for at flytte"
 	"dac_settings_auto_deploy_units"			"Indsæt automatisk enheder fra bænken, hvis der er plads."
 	"dac_settings_use_panorama_login"			"Brug gammelt Steam-login"
-	"dac_settings_battery_saver"				"Slå sparefunktionen til"
+
+	"dac_settings_mobile"						"Mobil"
+	"dac_mobile_settings"						"Framerate-indstillinger for mobil"
+	"dac_mobile_framerate"						"Framerate-begrænsning for mobil"
+	"dac_settings_fps_15"						"15 FPS (batteribesparende)"
+	"dac_settings_fps_30"						"30 FPS"
+	"dac_settings_fps_60"						"60 FPS"
+
+	"dac_settings_mobile_fps_increase"			"Forøg FPS-begrænsningen under touch-interaktioner."
+	"dac_settings_mobile_fps_increase_charging"		"Tillad FPS-forøgelse under opladning."
 
 	"dac_settings_build_version"				"Buildversion: {d:client_version_number}"
 
@@ -1849,14 +1858,14 @@
 	"DAC_Hero_Odds_Tier2"							"Enheder på niveau 2: {s:odds_tier_2}%"
 	"DAC_Hero_Odds_Tier3"							"Enheder på niveau 3: {s:odds_tier_3}%"
 	"DAC_Hero_Odds_Tier4"							"Enheder på niveau 4: {s:odds_tier_4}%"
-	"DAC_Hero_Odds_Tier5"							"Enheder på niveau 5: {s:odds_tier_5}%"
+	"DAC_Hero_Odds_Tier5"							"Es-enheder: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"Det næste level"
 	"DAC_Hero_Odds_Tier1_Next"						"Enheder på niveau 1: {s:odds_tier_1_next}%"
 	"DAC_Hero_Odds_Tier2_Next"						"Enheder på niveau 2: {s:odds_tier_2_next}%"
 	"DAC_Hero_Odds_Tier3_Next"						"Enheder på niveau 3: {s:odds_tier_3_next}%"
 	"DAC_Hero_Odds_Tier4_Next"						"Enheder på niveau 4: {s:odds_tier_4_next}%"
-	"DAC_Hero_Odds_Tier5_Next"						"Enheder på niveau 5: {s:odds_tier_5_next}%"
+	"DAC_Hero_Odds_Tier5_Next"						"Es-enheder: {s:odds_tier_5_next}%"
 
 	"DAC_Explain_Hero_Pool"							"Helte i butikken vælges fra en pulje, som er fælles for alle spillere."
 	
@@ -1990,6 +1999,7 @@
 	"ECanMatchMake_Friendly_5"				"Versionsuoverensstemmelse"
 	"ECanMatchMake_Friendly_6"				"Ikke alle spillere har låst op for rangeret tilstand"
 	"ECanMatchMake_Friendly_7"				"Grupper kan ikke spille denne kamptilstand"
+	"ECanMatchMake_Friendly_8"				"For mange spillere"
 
 	"dac_zoo_page1"			"Page 1"
 	"dac_zoo_page2"			"Buttons"
@@ -2024,7 +2034,7 @@
 	"dac_legendary_title_disruptor"	"Heksemestrenes es"
 	
 
-	"dac_legendary_enigma_desc" "Udvider <span class='Shaman'>shamanalliancens</span> <img class='InlineSynergyIcon SynergyShaman'/> effekt til hele din hær.<br><br>+15% chance for at dukke op, hvis du har opnået mindst ét niveau i <span class='Shaman'>shamanalliancen</span> <img class='InlineSynergyIcon SynergyShaman'/>."
+	"dac_legendary_enigma_desc" "Fjender, som er påvirket af fortryllelser, undertrykkelser eller lammelser, genererer -200% mana.<br><br>+15% chance for at dukke op, hvis du har opnået mindst ét niveau i <span class='Shaman'>shamanalliancen</span> <img class='InlineSynergyIcon SynergyShaman'/>."
 	"dac_legendary_gyrocopter_desc" "Giver Ustoppeligt Angreb til <span class='Dwarf'>dødbringende enheder</span> <img class='InlineSynergyIcon SynergyDeadeye'/>. Enheder med Ustoppeligt Angreb kan ikke ramme ved siden af.<br><br>+15% chance for at dukke op, hvis du har opnået mindst ét niveau i <span class='Dwarf'>den dødbringende alliance</span> <img class='InlineSynergyIcon SynergyDeadeye'/>."
 	"dac_legendary_lich_desc" "Din hærs managenerering fra angreb øges med 10% pr. niveau i <span class='Mages'>magikeralliancen</span> <img class='InlineSynergyIcon SynergyMages'/>.<br><br>+15% chance for at dukke op, hvis du har opnået mindst ét niveau i <span class='Mages'>magikeralliancen</span> <img class='InlineSynergyIcon SynergyMages'/>."
 	"dac_legendary_medusa_desc" "Giver Gengældelse til <span class='Naga'>skællede enheder</span> <img class='InlineSynergyIcon SynergyScaled'/>. Når en enhed med Gengældelse angribes, svækker den angriberen med 25 skade pr. sekund pr. allianceniveau.<br><br>+15% chance for at dukke op, hvis du har opnået mindst ét niveau i <span class='Naga'>den skællede alliance</span> <img class='InlineSynergyIcon SynergyScaled'/>."
