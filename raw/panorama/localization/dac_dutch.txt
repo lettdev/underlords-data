@@ -106,7 +106,9 @@
 	"DAC_StartMatchmaking_TooFewPlayers"					"Er zitten te weinig spelers in deze groep om aan matchmaking voor deze modus te beginnen"
 	"DAC_StartMatchmaking_InvalidPartyMatchMode"			"Deze spelmodus kan niet met een groep worden gespeeld"
 	"DAC_StartMatchmaking_NotAllPlayersCanPlayRanked"		"Niet alle spelers in deze groep hebben competitieve matchmaking ontgrendeld. Deze modus kan daarom niet worden gespeeld."
+	"DAC_StartMatchmaking_PlayerBannedFromMode"				"Een speler in deze groep is momenteel verbannen in deze modus."
 	"DAC_StartMatchmaking_ModeLocked"						"Je kunt deze modus nog niet spelen"
+	"DAC_StartMatchmaking_ModeBanned"						"Je bent tijdelijk verbannen in deze modus."
 	"DAC_StartMatchmaking_RankedLocked1"					"Speel nog {i:games_needed_to_unlock_ranked} casual multiplayerspel om competitieve multiplayer te ontgrendelen."
 	"DAC_StartMatchmaking_RankedLockedPlural"				"Speel nog {i:games_needed_to_unlock_ranked} casual multiplayerspellen om competitieve multiplayer te ontgrendelen."
 	"DAC_StartMatchmaking_InParty"							"Je kunt niet alleen aan matchmaking beginnen omdat je al in een groep zit."
@@ -821,7 +823,7 @@
 
 	"dac_name_tombstone"								"Grafsteen"
 	"dac_item_tombstone"								"Grafsteen"
-	"dac_item_tombstone_desc"							"Bondgenoten en vijandelijke helden veranderen in een zombie wanneer ze in een straal van 2 cellen van een grafsteen doodgaan."
+	"dac_item_tombstone_desc"							"Bondgenoten en vijandelijke helden veranderen in een zombie wanneer ze in een straal van 1 cel rond de grafsteen doodgaan."
 	"dac_item_tombstone_lore"							"Kunnen we eindelijk iets met al die lijken doen. – <i>Zenok, heler van Witspits</i>"
 	"dac_name_tombstone_zombie"							"Zombie"
 
@@ -1182,13 +1184,13 @@
 	"DAC_Synergy_MegaDemon"			"Megademon"
 	"DAC_Synergy_MegaTroll"			"Megatrol"
 
-	"DAC_Synergy_Desc_Beast_1"		"Bondgenoten krijgen +{s:damage_pct}% aanvalsschade"
-	"DAC_Synergy_Desc_Beast_2"		"Bondgenoten krijgen +{s:damage_pct}% aanvalsschade"
-	"DAC_Synergy_Desc_Beast_3"		"Bondgenoten krijgen +{s:damage_pct}% aanvalsschade"
+	"DAC_Synergy_Desc_Beast_1"		"Bondgenoten krijgen +{s:damage_pct}% aanvalsschade."
+	"DAC_Synergy_Desc_Beast_2"		"Bondgenoten krijgen +{s:damage_pct}% aanvalsschade."
+	"DAC_Synergy_Desc_Beast_3"		"Bondgenoten krijgen +{s:damage_pct}% aanvalsschade."
 
-	"DAC_Synergy_Desc_Savage_1"		"Geallieerde wilde eenheden passen met hun aanvallen een versterkend bloedeffect van {s:dot_damage} schade per seconde toe dat {s:dot_duration} seconden duurt. De duur wordt vernieuwd bij elke nieuwe aanval."
-	"DAC_Synergy_Desc_Savage_2"		"Geallieerde wilde eenheden passen met hun aanvallen een versterkend bloedeffect van {s:dot_damage} schade per seconde toe dat {s:dot_duration} seconden duurt. De duur wordt vernieuwd bij elke nieuwe aanval."
-	"DAC_Synergy_Desc_Savage_3"		"Geallieerde wilde eenheden passen met hun aanvallen een versterkend bloedeffect van {s:dot_damage} schade per seconde toe dat {s:dot_duration} seconden duurt. De duur wordt vernieuwd bij elke nieuwe aanval."
+	"DAC_Synergy_Desc_Savage_1"		"Allied Savage units gain {s:bonus_damage_per_attack} damage each time they land an attack on an enemy."
+	"DAC_Synergy_Desc_Savage_2"		"Allied Savage units gain {s:bonus_damage_per_attack} damage each time they land an attack on an enemy."
+	"DAC_Synergy_Desc_Savage_3"		"Allied Savage units gain {s:bonus_damage_per_attack} damage each time they land an attack on an enemy."
 
 	"DAC_Synergy_Desc_Demon_1"		"Alle demonen richten +{s:damage_bonus_pct}% pure schade aan. Actief wanneer je slechts één soort demon op het bord hebt."
 
@@ -1207,17 +1209,17 @@
 	"DAC_Synergy_Desc_Goblin_2"		"Alle vechtlustige eenheden krijgen +{s:armor_bonus} pantser en +{s:hp_regen} HP-herstel. Pantser en HP worden verdubbeld wanneer je minder levende eenheden dan je tegenstander hebt."
 	"DAC_Synergy_Desc_Goblin_3"		"Bondgenoten krijgen +{s:armor_bonus} pantser en +{s:hp_regen} HP-herstel. Pantser en HP worden verdubbeld wanneer je minder levende eenheden dan je tegenstander hebt."
 
-	"DAC_Synergy_Desc_Human_1"		"Alle menselijke eenheden krijgen een kans van {s:stun_chance}% om een doelwit bij het aanvallen {s:stun_duration} seconden het zwijgen op te leggen"
-	"DAC_Synergy_Desc_Human_2"		"Alle menselijke eenheden krijgen een kans van {s:stun_chance}% om een doelwit bij het aanvallen {s:stun_duration} seconden het zwijgen op te leggen"
-	"DAC_Synergy_Desc_Human_3"		"Alle menselijke eenheden krijgen een kans van {s:stun_chance}% om een doelwit bij het aanvallen {s:stun_duration} seconden het zwijgen op te leggen"
+	"DAC_Synergy_Desc_Human_1"		"Alle menselijke eenheden krijgen een kans van {s:stun_chance}% om een doelwit bij het aanvallen {s:stun_duration} seconden het zwijgen op te leggen."
+	"DAC_Synergy_Desc_Human_2"		"Alle menselijke eenheden krijgen een kans van {s:stun_chance}% om een doelwit bij het aanvallen {s:stun_duration} seconden het zwijgen op te leggen."
+	"DAC_Synergy_Desc_Human_3"		"Alle menselijke eenheden krijgen een kans van {s:stun_chance}% om een doelwit bij het aanvallen {s:stun_duration} seconden het zwijgen op te leggen."
 
-	"DAC_Synergy_Desc_Naga_1"		"Bondgenoten krijgen +{s:magic_resist}% magieweerstand"
-	"DAC_Synergy_Desc_Naga_2"		"Bondgenoten krijgen +{s:magic_resist}% magieweerstand"
+	"DAC_Synergy_Desc_Naga_1"		"Bondgenoten krijgen +{s:magic_resist}% magieweerstand."
+	"DAC_Synergy_Desc_Naga_2"		"Bondgenoten krijgen +{s:magic_resist}% magieweerstand."
 
-	"DAC_Synergy_Desc_Ogre_1"		"Wanneer een bloedgebonden eenheid doodgaat, richten alle andere bloedgebonden eenheden +{s:enrage_bonus_pct}% aanvalsschade aan voor de rest van het gevecht"
+	"DAC_Synergy_Desc_Ogre_1"		"Wanneer een bloedgebonden eenheid doodgaat, richten alle andere bloedgebonden eenheden +{s:enrage_bonus_pct}% aanvalsschade aan voor de rest van het gevecht."
 
-	"DAC_Synergy_Desc_Orc_1"		"De maximale gezondheid van gespierde eenheden wordt verhoogd met {s:hp_bonus}"
-	"DAC_Synergy_Desc_Orc_2"		"De maximale gezondheid van gespierde eenheden wordt verhoogd met {s:hp_bonus}"
+	"DAC_Synergy_Desc_Orc_1"		"De maximale gezondheid van gespierde eenheden wordt verhoogd met {s:hp_bonus}."
+	"DAC_Synergy_Desc_Orc_2"		"De maximale gezondheid van gespierde eenheden wordt verhoogd met {s:hp_bonus}."
 
 	"DAC_Synergy_Desc_Brawny_1"		"De maximale gezondheid van gespierde eenheden wordt verhoogd met {s:hp_bonus} voor elke eenheid die ze hebben gedood."
 	"DAC_Synergy_Desc_Brawny_2"		"De maximale gezondheid van gespierde eenheden wordt verhoogd met {s:hp_bonus} voor elke eenheid die ze hebben gedood."
@@ -1225,13 +1227,13 @@
 	"DAC_Synergy_Desc_Troll_1"		"Alle trollen krijgen +{s:attack_speed_bonus_trolls} aanvalssnelheid en andere bondgenoten krijgen +{s:attack_speed_bonus_others} aanvalssnelheid."
 	"DAC_Synergy_Desc_Troll_2"		"Alle trollen krijgen +{s:attack_speed_bonus_trolls} aanvalssnelheid en andere bondgenoten krijgen +{s:attack_speed_bonus_others} aanvalssnelheid."
 
-	"DAC_Synergy_Desc_Undead_1"		"Alle vijanden verliezen {s:armor_debuff} pantser"
-	"DAC_Synergy_Desc_Undead_2"		"Alle vijanden verliezen {s:armor_debuff} pantser"
-	"DAC_Synergy_Desc_Undead_3"		"Alle vijanden verliezen {s:armor_debuff} pantser"
+	"DAC_Synergy_Desc_Undead_1"		"Alle vijanden verliezen {s:armor_debuff} pantser."
+	"DAC_Synergy_Desc_Undead_2"		"Alle vijanden verliezen {s:armor_debuff} pantser."
+	"DAC_Synergy_Desc_Undead_3"		"Alle vijanden verliezen {s:armor_debuff} pantser."
 
-	"DAC_Synergy_Desc_Assassin_1"		"Alle sluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade"
-	"DAC_Synergy_Desc_Assassin_2"		"Alle sluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade"
-	"DAC_Synergy_Desc_Assassin_3"		"Alle sluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade. Ze verblinden vijanden na hun landing tevens gedurende {s:blind_duration} seconden in een straal van 1 cel ({s:blind_chance}% kans om te missen en {s:mana_gain_reduction}% minder mana wanneer ze worden aangevallen)"
+	"DAC_Synergy_Desc_Assassin_1"		"Alle sluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade. Een kritieke treffer VERWONDT het doelwit, waardoor ontvangen genezing {s:duration} seconden met {s:heal_damp}% wordt verminderd."
+	"DAC_Synergy_Desc_Assassin_2"		"Alle sluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade. Een kritieke treffer VERWONDT het doelwit, waardoor ontvangen genezing {s:duration} seconden met {s:heal_damp}% wordt verminderd."
+	"DAC_Synergy_Desc_Assassin_3"		"Alle sluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade. Ze verblinden vijanden na hun landing tevens gedurende {s:blind_duration} seconden in een straal van 1 cel ({s:blind_chance}% kans om te missen en {s:mana_gain_reduction}% minder mana wanneer ze worden aangevallen)."
 
 	"DAC_Synergy_Desc_DemonHunter_1"		"Heft de bonus van de demonenalliantie van je tegenstander op."
 	"DAC_Synergy_Desc_DemonHunter_2"		"Heft de bonus van de demonenalliantie van je tegenstander op. Alle demonen en demonenjagers richten +{s:damage_bonus_pct}% pure schade aan."
@@ -1246,11 +1248,11 @@
 	"DAC_Synergy_Desc_Knight_2"		"Ridders ontvangen {s:physical_reduction}% minder fysieke en magische schade en nog {s:physical_reduction_extra}% minder wanneer ze in een straal van 1 cel van een andere ridder staan."
 	"DAC_Synergy_Desc_Knight_3"		"Ridders ontvangen {s:physical_reduction}% minder fysieke en magische schade en nog {s:physical_reduction_extra}% minder wanneer ze in een straal van 1 cel van een andere ridder staan."
 
-	"DAC_Synergy_Desc_Mage_1"		"Vijanden ontvangen {s:magic_resist_debuff}% meer magische schade"
-	"DAC_Synergy_Desc_Mage_2"		"Vijanden ontvangen {s:magic_resist_debuff}% meer magische schade"
+	"DAC_Synergy_Desc_Mage_1"		"Vijanden ontvangen {s:magic_resist_debuff}% meer magische schade."
+	"DAC_Synergy_Desc_Mage_2"		"Vijanden ontvangen {s:magic_resist_debuff}% meer magische schade."
 
-	"DAC_Synergy_Desc_Mech_1"		"Alle uitvinders krijgen +{s:health_regen} HP-herstel"
-	"DAC_Synergy_Desc_Mech_2"		"Alle uitvinders krijgen +{s:health_regen} HP-herstel"
+	"DAC_Synergy_Desc_Mech_1"		"Alle uitvinders krijgen +{s:health_regen} HP-herstel."
+	"DAC_Synergy_Desc_Mech_2"		"Alle uitvinders krijgen +{s:health_regen} HP-herstel."
 
 	"DAC_Synergy_Desc_Inventor_1"		"Geallieerde uitvinders exploderen bij het doodgaan en richten daarbij {s:damage_hp_pct}% van hun maximale gezondheid aan als schade bij alle vijanden in een straal van 1 cel."
 	"DAC_Synergy_Desc_Inventor_2"		"Geallieerde uitvinders exploderen bij het doodgaan en richten daarbij {s:damage_hp_pct}% van hun maximale gezondheid aan als schade bij alle vijanden in een straal van 1 cel."
@@ -1261,9 +1263,9 @@
 	"DAC_Synergy_Desc_Warlock_2"		"Elke keer dat een heksenmeester een spreuk gebruikt, vormt deze {s:duration} seconden een verbinding met de bondgenoot met de laagste gezondheid. Wanneer een van de verbonden helden schade aanricht, worden beide eenheden met {s:lifesteal_pct}% van de aangerichte schade genezen."
 	"DAC_Synergy_Desc_Warlock_3"		"Elke keer dat een heksenmeester een spreuk gebruikt, vormt deze {s:duration} seconden een verbinding met de bondgenoot met de laagste gezondheid. Wanneer een van de verbonden helden schade aanricht, worden beide eenheden met {s:lifesteal_pct}% van de aangerichte schade genezen."
 
-	"DAC_Synergy_Desc_Warrior_1"		"Alle krijgers krijgen +{s:armor_bonus} pantser"
-	"DAC_Synergy_Desc_Warrior_2"		"Alle krijgers krijgen +{s:armor_bonus} pantser"
-	"DAC_Synergy_Desc_Warrior_3"		"Alle krijgers krijgen +{s:armor_bonus} pantser"
+	"DAC_Synergy_Desc_Warrior_1"		"Alle krijgers krijgen +{s:armor_bonus} pantser."
+	"DAC_Synergy_Desc_Warrior_2"		"Alle krijgers krijgen +{s:armor_bonus} pantser."
+	"DAC_Synergy_Desc_Warrior_3"		"Alle krijgers krijgen +{s:armor_bonus} pantser."
 
 
 	"DAC_Synergy_Desc_MegaWarrior_1"		"Geallieerde megakrijgers krijgen {s:armor_bonus} pantser."
@@ -1271,7 +1273,7 @@
 	"DAC_Synergy_Desc_MegaElusive_1"		"Alle megaontwijkende eenheden krijgen +{s:evasion_bonus}% ontwijkingskans."
 	"DAC_Synergy_Desc_MegaAssassin_1"		"Alle megasluipmoordenaars krijgen een kans van {s:crit_chance}% op kritieke treffers van {s:crit_bonus}% schade."
 	"DAC_Synergy_Desc_MegaBloodbound_1"		"Wanneer een megabloedgebonden eenheid doodgaat, richten alle andere megabloedgebonden eenheden +{s:enrage_bonus_pct}% aanvalsschade aan voor de rest van het gevecht."
-	"DAC_Synergy_Desc_MegaScaled_1"			"Bondgenoten krijgen +{s:magic_resist}% magieweerstand"
+	"DAC_Synergy_Desc_MegaScaled_1"			"Bondgenoten krijgen +{s:magic_resist}% magieweerstand."
 	"DAC_Synergy_Desc_MegaDemon_1"			"Alle megademonen richten +{s:damage_bonus_pct}% pure schade aan."
 	"DAC_Synergy_Desc_MegaTroll_1"			"Alle megatrollen krijgen +{s:attack_speed_bonus_trolls} aanvalssnelheid."
 
@@ -1598,7 +1600,7 @@
 
 	"dac_settings_mobile"						"Mobiel"
 	"dac_mobile_settings"						"Instellingen framesnelheid op mobiele apparaten"
-	"dac_mobile_framerate"						"Beperking framesnelheid op mobiel apparaten"
+	"dac_mobile_framerate"						"Beperking framesnelheid op mobiele apparaten"
 	"dac_settings_fps_15"						"15 FPS (batterijbesparing)"
 	"dac_settings_fps_30"						"30 FPS"
 	"dac_settings_fps_60"						"60 FPS"
@@ -2034,14 +2036,13 @@
 	"dac_legendary_title_disruptor"	"Elite der heksenmeesters"
 	
 
-	"dac_legendary_enigma_desc" "Vijanden die behekst, het zwijgen opgelegd of verlamd zijn genereren -200% mana.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Shaman'>sjamanen</span> <img class='InlineSynergyIcon SynergyShaman'/> hebt."
+	"dac_legendary_enigma_desc" "Vijanden die behekst, het zwijgen opgelegd of verlamd zijn genereren geen mana wanneer ze worden aangevallen.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Shaman'>sjamanen</span> <img class='InlineSynergyIcon SynergyShaman'/> hebt."
 	"dac_legendary_gyrocopter_desc" "Geeft <span class='Dwarf'>dodelijke</span> <img class='InlineSynergyIcon SynergyDeadeye'/> eenheden Voltreffer. Eenheden met Voltreffer kunnen niet missen.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Dwarf'>dodelijke</span> <img class='InlineSynergyIcon SynergyDeadeye'/> eenheden hebt."
 	"dac_legendary_lich_desc" "Je leger genereert 10% meer mana bij aanvallen per alliantielevel van <span class='Mages'>magiërs</span> <img class='InlineSynergyIcon SynergyMages'/>.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Mages'>magiërs</span> <img class='InlineSynergyIcon SynergyMages'/> hebt."
 	"dac_legendary_medusa_desc" "Geeft <span class='Naga'>geschubde</span> <img class='InlineSynergyIcon SynergyScaled'/> eenheden Vergelding. Wanneer een vijand met Vergelding wordt aangevallen, passen deze per alliantielevel een negatief effect van 25 schade per seconde toe op zijn aanvaller.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Naga'>geschubde</span> <img class='InlineSynergyIcon SynergyScaled'/> eenheden hebt."
 	"dac_legendary_techies_desc" "Geeft <span class='Mech'>uitvinders</span> <img class='InlineSynergyIcon SynergyInventors'/> Kettingreactie. Als een vijand door Instabiele reactor doodgaat, explodeert deze alsof hij ook Instabiele reactor heeft.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Mech'>uitvinders</span> <img class='InlineSynergyIcon SynergyInventors'/> hebt."
 	"dac_legendary_warlord_desc" "Geeft je eenheden Miniverlamming: bij het aanvallen hebben ze een kans van 5% per alliantielevel van <span class='Troll'>trollen</span> <img class='InlineSynergyIcon SynergyTroll'/> om hun doelwit 0,25 seconden te verlammen.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Troll'>trollen</span> <img class='InlineSynergyIcon SynergyTroll'/> hebt."
-	"dac_legendary_disruptor_desc" "Het effect van de alliantie van <span class='Warlock'>heksenmeesters</span> <img class='InlineSynergyIcon SynergyWarlocks'/> wordt nu op twee doelwitten toegepast.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Warlock'>heksenmeesters</span> <img class='InlineSynergyIcon SynergyWarlocks'/> hebt."
-
+	"dac_legendary_disruptor_desc" "Het effect van de alliantie van <span class='Warlock'>heksenmeesters</span> <img class='InlineSynergyIcon SynergyWarlocks'/> wordt nu op één doelwit per alliantielevel toegepast.<br><br>+15% kans om te vinden als je ten minste één level van de alliantie van <span class='Warlock'>heksenmeesters</span> <img class='InlineSynergyIcon SynergyWarlocks'/> hebt."
 }
 
 
